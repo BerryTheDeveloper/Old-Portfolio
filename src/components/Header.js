@@ -5,13 +5,17 @@ import {ReactComponent as UKIcon} from "../images/united-kingdom.svg"
 
 const Header = () => {
     return (
-        <div className="w-10/12 py-8 m-auto flex flex-row justify-between items-center">
-            <div className="flex">
-                <p className="tracking-wide text-xl text-white font-bold">Hi!</p>
-                {/* <img src="#" alt="Hi"/> */}
+        <div className="sticky top-0 z-10" style={{backgroundColor: "#1f1b3b"}}>
+            <div className="w-10/12 py-8 m-auto flex flex-row justify-between items-center">
+                <div className="flex">
+                    <p className="tracking-wide text-xl text-white font-bold">Hi!</p>
+                    {/* <img src="#" alt="Hi"/> */}
+                </div>
+                <div className="cursor-pointer">
+                <PolandIcon />
+                </div> 
+                {/* <UKIcon /> */}
             </div>
-            {/* <PolandIcon /> */}
-            <UKIcon />
         </div>
     )
 }
