@@ -1,9 +1,5 @@
-const Footer = () =>  {
-    return (
-        <div className="h-10">
-            
-        </div>
-    )
-}
+const Footer = () => {
+    return <div className="h-12 hidden"></div>;
+};
 
-export default Footer
+export default Footer;
