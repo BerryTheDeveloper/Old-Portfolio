@@ -1,8 +1,6 @@
 function Home() {
     return (
-        <div
-            className="w-full text-white text-center pt-20  pl-8"
-            style={{ height: "80vh" }}>
+        <div className="w-full text-white h-screen text-center pt-20 pl-8">
             <p className="text-5xl font-medium tracking-wider">
                 A Frontend Developer Passionate
             </p>

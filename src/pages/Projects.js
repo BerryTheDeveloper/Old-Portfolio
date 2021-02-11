@@ -2,10 +2,10 @@ import Particles from "react-tsparticles";
 
 const Projects = () => {
     return (
-        <div className="h-3/4  w-full pt-24">
+        <div className="h-screen w-full relative">
             <Particles
                 id="tsparticles"
-                className="h-full w-full"
+                className="h-full w-full absolute inset-0"
                 options={{
                     fpsLimit: 60,
                     interactivity: {
@@ -46,7 +46,7 @@ const Projects = () => {
                             value: "#fff",
                             animation: {
                                 enable: true,
-                                speed: 50,
+                                speed: 4,
                                 sync: false,
                             },
                         },
@@ -71,7 +71,7 @@ const Projects = () => {
                                 enable: false,
                                 frequency: 1,
                             },
-                            width: 1,
+                            width: 0.1,
                             warp: false,
                         },
                         move: {
@@ -88,22 +88,22 @@ const Projects = () => {
                             },
                             direction: "right",
                             distance: 0,
-                            enable: false, // TUTAJ WŁĄCZA SIĘ RUCH
+                            enable: true, // TUTAJ WŁĄCZA SIĘ RUCH
                             gravity: {
                                 acceleration: 9.81,
                                 enable: false,
-                                maxSpeed: 50,
+                                maxSpeed: 10,
                             },
                             outModes: {
                                 default: "out",
                             },
                             random: false,
                             size: false,
-                            speed: 2,
+                            speed: 1,
                             straight: false,
                             trail: {
                                 enable: false,
-                                length: 10,
+                                length: 100,
                                 fillColor: {
                                     value: "#000000",
                                 },
@@ -157,7 +157,7 @@ const Projects = () => {
                                 enable: true,
                                 minimumValue: 1,
                             },
-                            value: 3,
+                            value: 2,
                             animation: {
                                 destroy: "none",
                                 enable: true,
@@ -171,6 +171,7 @@ const Projects = () => {
                     },
                 }}
             />
+            <div className="card"></div>
         </div>
     );
 };
