@@ -30,6 +30,7 @@ function Home() {
                     Contact with me
                 </a>
             </div>
+            {/* <img src="" alt=""/> */}
         </div>
     );
 }

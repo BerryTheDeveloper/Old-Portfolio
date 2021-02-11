@@ -1,8 +1,9 @@
 import Particles from "react-tsparticles";
+import Card from "../components/Card";
 
 const Projects = () => {
     return (
-        <div className="h-screen w-full relative">
+        <div className="h-screen w-full h-full relative">
             <Particles
                 id="tsparticles"
                 className="h-full w-full absolute inset-0"
@@ -171,7 +172,11 @@ const Projects = () => {
                     },
                 }}
             />
-            <div className="card"></div>
+            <div className="w-full h-full z-20 flex items-center flex-wrap justify-between">
+                <Card />
+                <Card />
+                <Card />
+            </div>
         </div>
     );
 };
