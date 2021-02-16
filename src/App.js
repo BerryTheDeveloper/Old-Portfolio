@@ -13,7 +13,7 @@ function App() {
                     <Content />
                 </div>
             </div>
-            <div className="bg-black bg-opacity-10 fixed inset-0 backdrop-blur z-10"></div>
+            <div className="bg-black bg-opacity-50 fixed inset-0 backdrop-blur z-10"></div>
             <div className="bg-image bg-left-top bg-no-repeat bg-fixed fixed inset-0"></div>
         </>
     );
