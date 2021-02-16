@@ -9,6 +9,15 @@ module.exports = {
             height: {
                 "85vh": "85vh",
             },
+            animation: {
+                hello: "hello 1s ease-in-out infinite",
+            },
+            keyframes: {
+                hello: {
+                    "0%, 100%": { transform: "rotate(-30deg)" },
+                    "50%": { transform: "rotate(30deg)" },
+                },
+            },
         },
         backdropFilter: {
             blur: "blur(40px)",

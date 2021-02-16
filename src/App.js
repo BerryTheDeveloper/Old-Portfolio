@@ -1,20 +1,20 @@
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
+import Icons from "./components/Icons";
 import Footer from "./components/Footer";
 import Content from "./components/Content";
 
 function App() {
     return (
         <>
-            <div className="bg-image bg-left-top bg-no-repeat bg-fixed">
-                <div className="bg-white bg-opacity-10 fixed inset-0 backdrop-blur z-10"></div>
-                <Header />
-                <div className="w-10/12 m-auto pt-16 flex z-20">
+            <div className="w-11/12 m-auto z-20 relative">
+                <Icons />
+                <div className="w-full m-auto flex">
                     <Navbar />
                     <Content />
                 </div>
-                <Footer />
             </div>
+            <div className="bg-black bg-opacity-10 fixed inset-0 backdrop-blur z-10"></div>
+            <div className="bg-image bg-left-top bg-no-repeat bg-fixed fixed inset-0"></div>
         </>
     );
 }

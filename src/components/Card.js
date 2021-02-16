@@ -4,24 +4,26 @@ import landingPage from "../images/landingPage.png";
 
 const Card = () => {
     return (
-        <div className="w-10/12 p-1 ml-auto mr-auto bg-white bg-opacity-10 backdrop-custom-blur rounded-3xl mb-10">
+        <div className="2xl:w-8/12 w-10/12 p-1 ml-auto mr-auto bg-black bg-opacity-30 backdrop-custom-blur rounded-3xl mb-10">
             <img
-                className="rounded-3xl w-11/12 h-2/4 my-6 mx-auto shadow-2xl"
+                className="rounded-3xl w-11/12 h-56 my-6 mx-auto shadow-2xl"
                 src={landingPage}
                 alt=""
             />
-            <p className="text-white font-bold text-2xl w-max ml-6">
-                Mockups landing page
-            </p>
-            <div className="flex w-max h-max m-6 text-white text-xl font-semibold justify-center items-center">
-                <a href="#" className="flex items-end">
-                    <GithubIcon className="w-10 h-10" />
-                    <p className="px-4">Github</p>
-                </a>
-                <a href="#" className="flex items-end">
-                    <NetlfiyIcon className="w-10 h-10" />
-                    <p className="px-4">Netlify</p>
-                </a>
+            <div className="flex flex-col  justify-center items-center">
+                <p className="h-max text-white font-bold text-2xl w-max">
+                    Mockups landing page
+                </p>
+                <div className="flex w-max h-max m-6 text-white text-xl font-semibold justify-center items-center">
+                    <a href="#" className="flex items-end">
+                        <GithubIcon className="w-10 h-10" />
+                        <p className="px-4">Source</p>
+                    </a>
+                    <a href="#" className="flex items-end">
+                        <NetlfiyIcon className="w-10 h-10" />
+                        <p className="px-4">Demo</p>
+                    </a>
+                </div>
             </div>
         </div>
     );

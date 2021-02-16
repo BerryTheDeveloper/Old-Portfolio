@@ -1,14 +1,17 @@
 import Home from "../pages/Home";
 import Projects from "../pages/Projects";
-import Skills from "../pages/Skills";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
 import Footer from "./Footer";
 
 const Content = () => {
     return (
-        <div className="flex flex-col ml-auto w-3/4 z-20">
+        <div className="w-4/5 flex flex-col z-20">
             <Home />
             <Projects />
-            <Skills />
+            <About />
+            <Contact />
+            <Footer />
         </div>
     );
 };
