@@ -2,7 +2,7 @@ const nameForNavbar = ["Home", "Projects", "Skills", "About", "Contact"];
 
 const Navbar = () => {
     return (
-        <nav className="w-1/5 transform translate-y-1/2 text-white text-2xl font-normal leading-10 fixed z-10">
+        <nav className="w-1/5 transform translate-y-1/2 text-white text-2xl font-normal leading-10 fixed z-20">
             <ul className="flex flex-col text-decoration:none list-none">
                 {nameForNavbar.map((item, index) => (
                     <a

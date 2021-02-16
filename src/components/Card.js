@@ -4,9 +4,9 @@ import landingPage from "../images/landingPage.png";
 
 const Card = () => {
     return (
-        <div className="w-5/12 bg-white bg-opacity-10 backdrop-custom-blur rounded-5xl">
+        <div className="w-10/12 p-1 ml-auto mr-auto bg-white bg-opacity-10 backdrop-custom-blur rounded-3xl mb-10">
             <img
-                className="rounded-5xl w-11/12 h-2/4 my-6 mx-auto shadow-2xl"
+                className="rounded-3xl w-11/12 h-2/4 my-6 mx-auto shadow-2xl"
                 src={landingPage}
                 alt=""
             />
@@ -14,10 +14,14 @@ const Card = () => {
                 Mockups landing page
             </p>
             <div className="flex w-max h-max m-6 text-white text-xl font-semibold justify-center items-center">
-                <GithubIcon className="w-14 h-14" />
-                <p className="px-4">Github</p>
-                <NetlfiyIcon className="w-14 h-14" />
-                <p className="px-4">Netlify</p>
+                <a href="#" className="flex items-end">
+                    <GithubIcon className="w-10 h-10" />
+                    <p className="px-4">Github</p>
+                </a>
+                <a href="#" className="flex items-end">
+                    <NetlfiyIcon className="w-10 h-10" />
+                    <p className="px-4">Netlify</p>
+                </a>
             </div>
         </div>
     );

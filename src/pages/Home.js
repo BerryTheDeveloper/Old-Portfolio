@@ -1,6 +1,6 @@
 function Home() {
     return (
-        <div className="w-full text-white h-screen text-center pt-20 pl-8">
+        <div className="w-full text-white h-85vh text-center pt-20 pl-8 z-20">
             <p className="text-5xl font-medium tracking-wider">
                 A Frontend Developer Passionate
             </p>

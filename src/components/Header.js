@@ -4,7 +4,7 @@ import { ReactComponent as UKIcon } from "../images/united-kingdom.svg";
 
 const Header = () => {
     return (
-        <div className="sticky top-0 z-10">
+        <div className="sticky top-0 z-20">
             <div className="w-10/12 py-8 m-auto flex flex-row justify-between items-center">
                 <div className="flex">
                     <p className="tracking-wide text-xl text-white font-bold">

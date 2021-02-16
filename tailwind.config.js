@@ -6,6 +6,9 @@ module.exports = {
             backgroundImage: (theme) => ({
                 image: "url('./images/bg.jpg')",
             }),
+            height: {
+                "85vh": "85vh",
+            },
         },
         backdropFilter: {
             blur: "blur(40px)",

@@ -3,16 +3,16 @@ import Card from "../components/Card";
 
 const Projects = () => {
     return (
-        <div className="h-screen w-full h-full relative">
+        <div className=" w-full relative pt-10">
             <Particles
                 id="tsparticles"
-                className="h-full w-full absolute inset-0"
+                className="w-full absolute inset-0"
                 options={{
                     fpsLimit: 60,
                     interactivity: {
                         detectsOn: "window",
                         events: {
-                            resize: true,
+                            resize: false,
                         },
                     },
                     motion: {
@@ -172,10 +172,19 @@ const Projects = () => {
                     },
                 }}
             />
-            <div className="w-full h-full z-20 flex items-center flex-wrap justify-between">
-                <Card />
-                <Card />
-                <Card />
+            <div className="w-full flex">
+                <div className="flex m-auto">
+                    <div className="flex justify-center flex-col">
+                        <Card />
+                        <Card />
+                        <Card />
+                    </div>
+                    <div className="flex flex-col pt-64">
+                        <Card />
+                        <Card />
+                        <Card />
+                    </div>
+                </div>
             </div>
         </div>
     );
