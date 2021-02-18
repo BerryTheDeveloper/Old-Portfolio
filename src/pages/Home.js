@@ -18,7 +18,7 @@ function Home() {
             <div className="flex mt-24 justify-start">
                 <a
                     href="#"
-                    className="text-xl cursor-pointer py-2 px-3 tracking-wider border-2 border-solid border-white rounded-lg hover:bg-red-500">
+                    className="text-xl cursor-pointer py-2 px-3 tracking-wider border-2 border-solid border-white rounded-lg">
                     View my work
                 </a>
                 <a

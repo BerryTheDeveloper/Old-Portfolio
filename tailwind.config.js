@@ -5,8 +5,6 @@ module.exports = {
         extend: {
             backgroundImage: (theme) => ({
                 image: "url('./images/bg.jpg')",
-                "image-text-blue": "url('./images/bg-text-blue.jpg')",
-                "image-text-pink": "url('./images/bg-text-pink.jpg')",
             }),
             height: {
                 "85vh": "85vh",
@@ -16,12 +14,16 @@ module.exports = {
             },
             animation: {
                 hello: "hello 1s ease-in-out infinite",
-                "bg-gradient": "bg-gradient 7.5s ease infinite",
+                "bg-gradient": "bg-gradient 5s ease infinite",
+                "gradient-left": "gradient-left 2s linear  infinite",
+                "gradient-top": "gradient-top 2s linear infinite",
+                "gradient-right": "gradient-right 2s linear  infinite",
+                "gradient-bottom": "gradient-bottom 2s linear infinite",
             },
             keyframes: {
                 hello: {
-                    "0%, 100%": { transform: "rotate(-30deg)" },
-                    "50%": { transform: "rotate(30deg)" },
+                    "0%, 100%": { transform: "rotateZ(-30deg)" },
+                    "50%": { transform: "rotateZ(30deg)" },
                 },
                 "bg-gradient": {
                     "0%, 100%": {
@@ -31,6 +33,46 @@ module.exports = {
                     "50%": {
                         "background-size": "400% 400%",
                         "background-position": "right center",
+                    },
+                },
+                "gradient-left": {
+                    "0%, 100%": {
+                        "background-size": "400% 400%",
+                        "background-position": "top center",
+                    },
+                    "50%": {
+                        "background-size": "400% 400%",
+                        "background-position": "bottom center",
+                    },
+                },
+                "gradient-top": {
+                    "0%, 100%": {
+                        "background-size": "400% 400%",
+                        "background-position": "left center",
+                    },
+                    "50%": {
+                        "background-size": "400% 400%",
+                        "background-position": "right center",
+                    },
+                },
+                "gradient-right": {
+                    "0%, 100%": {
+                        "background-size": "400% 400%",
+                        "background-position": "bottom center",
+                    },
+                    "50%": {
+                        "background-size": "400% 400%",
+                        "background-position": "top center",
+                    },
+                },
+                "gradient-bottom": {
+                    "0%, 100%": {
+                        "background-size": "400% 400%",
+                        "background-position": "right center",
+                    },
+                    "50%": {
+                        "background-size": "400% 400%",
+                        "background-position": "left center",
                     },
                 },
             },

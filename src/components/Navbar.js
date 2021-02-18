@@ -10,7 +10,7 @@ const Navbar = () => {
                     Hi!
                 </p>
                 <div className="animate-hello">
-                    <Hello />
+                    <Hello className="w-6" />
                 </div>
             </div>
             <ul className="flex flex-col text-decoration:none list-none  pb-24">

@@ -4,7 +4,7 @@ import landingPage from "../images/landingPage.png";
 
 const Card = () => {
     return (
-        <div className="2xl:w-8/12 w-10/12 p-1 ml-auto mr-auto bg-black bg-opacity-30 backdrop-custom-blur rounded-3xl mb-10">
+        <div className="2xl:w-7/12 w-10/12 p-1 ml-auto mr-auto bg-black bg-opacity-30 backdrop-custom-blur rounded-3xl mb-10">
             <img
                 className="rounded-3xl w-11/12 h-56 my-6 mx-auto shadow-2xl"
                 src={landingPage}
