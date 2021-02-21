@@ -46,7 +46,7 @@ const ContactIcons = () => {
         <div className="w-full pb-8 flex flex-col justify-center items-center">
             <a
                 href="#"
-                className="w-24 h-24 m-8 bg-gray-300 bg-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6 relative overflow-hidden z-20"
+                className="w-24 h-24 m-8 bg-gray-300 bg-opacity-20 ring-2 ring-gray-300 ring-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6 relative overflow-hidden z-20"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
                 <Facebook className="w-12 h-12 relative z-10" />
@@ -54,7 +54,7 @@ const ContactIcons = () => {
             </a>
             <a
                 href="#"
-                className="w-24 h-24 m-8 bg-gray-300 bg-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
+                className="w-24 h-24 m-8 bg-gray-300 bg-opacity-20 ring-2 ring-gray-300 ring-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
                 <Twitter className="w-12 h-12" />
@@ -62,7 +62,7 @@ const ContactIcons = () => {
             </a>
             <a
                 href="#"
-                className="w-24 h-24 m-8 bg-gray-300 bg-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
+                className="w-24 h-24 m-8 bg-gray-300 bg-opacity-20 ring-2 ring-gray-300 ring-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
                 <Github className="w-12 h-12" />
@@ -70,7 +70,7 @@ const ContactIcons = () => {
             </a>
             <a
                 href="#"
-                className="w-24 h-24 m-8 bg-gray-300 bg-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
+                className="w-24 h-24 m-8 bg-gray-300 bg-opacity-20 ring-2 ring-gray-300 ring-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
                 <Linkedin className="w-12 h-12" />

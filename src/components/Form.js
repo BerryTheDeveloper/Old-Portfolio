@@ -11,7 +11,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave }) => {
                 name="name"
                 type="text"
                 placeholder="Please enter your name"
-                className="w-96 h-12 text-white font-bold pl-3 bg-gray-300 bg-opacity-20 outline-none"
+                className="w-full h-12 text-white font-bold pl-3 bg-white bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-white focus:ring-opacity-80"
             />
             <label
                 htmlFor="email"
@@ -23,7 +23,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave }) => {
                 name="email"
                 type="email"
                 placeholder="Please enter your email"
-                className="w-96 h-12 text-white font-bold pl-3 bg-gray-300 bg-opacity-20 outline-none "
+                className="w-full h-12 text-white font-bold pl-3 bg-gray-300 bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-red-500 focus:ring-opacity-80"
             />
             <label
                 htmlFor="subject"
@@ -33,7 +33,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave }) => {
             <select
                 id="subject"
                 name="subject"
-                className="w-96 h-12 text-white font-bold pl-3 bg-gray-300 bg-opacity-20 outline-none">
+                className="w-full h-12 text-white font-bold pl-3 bg-gray-300 bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-green-500 focus:ring-opacity-80">
                 <option
                     value="Just saying hi"
                     className="bg-gray-500 text-white font-bold"
@@ -70,12 +70,14 @@ const Form = ({ handleMouseEnter, handleMouseLeave }) => {
                 name="message"
                 id="message"
                 placeholder="Please enter your message"
-                className="w-96 h-36 text-white font-bold px-3 pt-2 bg-gray-300 bg-opacity-20 outline-none resize-none"></textarea>
+                className="w-full h-36 text-white font-bold px-3 pt-2 bg-gray-300 bg-opacity-20 outline-none resize-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-white focus:ring-opacity-80"></textarea>
+
             <button
                 type="#"
-                className="w-max h-12 text-xl cursor-pointer mt-16 py-2 px-3 text-white tracking-wider  border-2 border-solid border-white transition duration-500"
+                className="w-max h-12 text-xl cursor-pointer mt-16 py-2 px-3 bg-gray-300 bg-opacity-20 backdrop-filter text-white tracking-wider shadow-xl ring-2 ring-white ring-opacity-80 backdrop-filter shadow-2xl transition duration-500 relative overflow-hidden"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
+                <div className="bg-white bg-opacity-30 absolute top-0 left-0 w-12 h-full transform skew-x-45 translate-x-56 transition duration-500"></div>
                 Let's cooparate!
             </button>
         </form>

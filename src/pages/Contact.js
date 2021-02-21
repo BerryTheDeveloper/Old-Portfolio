@@ -16,33 +16,34 @@ function Contact() {
     const getGetInTouchText = () => document.querySelector(".contact-title");
 
     const handleMouseEnter = (e) => {
+        const div = e.target.querySelector("div");
         const getInTouch = getGetInTouchText();
         cssClasses.forEach((item) => {
             if (item !== cssClasses[5] && item !== cssClasses[6])
                 e.target.classList.add(item);
             getInTouch.classList.add(item);
         });
-
         getInTouch.classList.remove("text-gray-300");
-        // getInTouch.classList.add("bg-clip-text");
-        // getInTouch.classList.add("text-transparent");
+        div.classList.remove("translate-x-56");
+        div.classList.add("-translate-x-52");
     };
 
     const handleMouseLeave = (e) => {
+        const div = e.target.querySelector("div");
         const getInTouch = getGetInTouchText();
         cssClasses.forEach((item) => {
             e.target.classList.remove(item);
             getInTouch.classList.remove(item);
         });
         getInTouch.classList.add("text-gray-300");
-        // getInTouch.classList.remove("bg-clip-text");
-        // getInTouch.classList.remove("text-transparent");
+        div.classList.add("translate-x-56");
+        div.classList.remove("-translate-x-52");
     };
 
     return (
         <div className="w-10/12 m-auto pb-36 flex">
-            <div className="w-1/2">
-                <div className="w-full flex flex-col text-white pt-8">
+            <div className="w-3/4">
+                <div className="w-3/4 flex flex-col text-white pt-8">
                     <h1 className="contact-title text-6xl font-semibold text-gray-300">
                         Get in touch!
                     </h1>
@@ -58,7 +59,7 @@ function Contact() {
                     />
                 </div>
             </div>
-            <div className="w-1/2 flex justify-center items-end">
+            <div className="w-1/4 flex justify-center items-end">
                 <ContactIcons />
             </div>
         </div>
