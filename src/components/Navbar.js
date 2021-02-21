@@ -1,8 +1,27 @@
 import { ReactComponent as Hello } from "../images/hello.svg";
 
-const nameForNavbar = ["Home", "Projects", "About", "Contact"];
-
 const Navbar = () => {
+    const nameForNavbar = ["Home", "Projects", "About", "Contact"];
+    const backgroundTextClases = [
+        "text-blue-800",
+        "text-purple-800",
+        "text-pink-800",
+    ];
+
+    const handleMouseEnter = (e) => {
+        const randomTextColor =
+            backgroundTextClases[Math.round(Math.random() * 2)];
+        e.target.classList.add(randomTextColor);
+    };
+
+    const handleMouseLeave = (e) => {
+        backgroundTextClases.forEach((item) => {
+            if (e.target.classList.contains(item))
+                e.target.classList.remove(item);
+        });
+        e.target.classList.add("text-white");
+    };
+
     return (
         <nav className="w-1/5 h-screen sticky top-0 text-white text-2xl font-normal leading-10 fixed z-20 flex flex-col justify-between">
             <div className="flex items-center pt-10">
@@ -18,7 +37,9 @@ const Navbar = () => {
                     <a
                         href="#"
                         key={index}
-                        className="py-3 hover:text-red-900  w-2/5">
+                        className="py-3 w-2/5"
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}>
                         {item}
                     </a>
                 ))}
