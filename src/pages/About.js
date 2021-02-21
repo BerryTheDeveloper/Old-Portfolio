@@ -27,7 +27,7 @@ const About = () => {
     return (
         <div className="w-full flex flex-col m-auto">
             <div className="w-full text-center pt-36">
-                <p className="text-7xl uppercase font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-pink-700 animate-bg-gradient">
+                <p className="text-7xl uppercase font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-800 via-purple-800 to-pink-800 animate-bg-gradient">
                     let me introduce myself
                 </p>
             </div>
@@ -42,7 +42,7 @@ const About = () => {
                         </p>
                         <p className="text-gray-300 px-8">
                             Nazywam się{" "}
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-800 via-purple-800 to-pink-800">
                                 Bartłomiej Popiołek
                             </span>
                             . Jestem absolwentem Politechniki Wrocławskiej,
@@ -63,10 +63,10 @@ const About = () => {
                     </div>
                     <div className="absolute inset-0 bg-black opacity-50 backdrop-blur rounded-lg border-1 z-10"></div>
                     <div
-                        className="absolute -bottom-8 -left-8 w-3/4 h-3/4 rounded-lg bg-blue-500 opacity-40"
+                        className="absolute -bottom-8 -left-8 w-3/4 h-3/4 rounded-lg bg-blue-800 opacity-40"
                         style={{ filter: "blur(40px)" }}></div>
                     <div
-                        className="absolute -top-8 -right-8 w-3/4 h-3/4 rounded-lg bg-pink-500 opacity-40"
+                        className="absolute -top-8 -right-8 w-3/4 h-3/4 rounded-lg bg-pink-800 opacity-40"
                         style={{ filter: "blur(40px)" }}></div>
 
                     <div className="w-max h-max m-auto flex justify-center text-gray-300 relative cursor-pointer z-20 mb-12">
@@ -77,10 +77,10 @@ const About = () => {
                             onMouseLeave={handleMouseLeave}>
                             Resume
                         </a>
-                        <div className="div-left absolute -inset-y-1 left-0 w-1 h-full m-auto z-20 bg-gradient-to-t from-pink-500 via-purple-500 to-blue-500"></div>
-                        <div className="div-top absolute -inset-x-1 top-0 h-1 w-full m-auto z-20 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
-                        <div className="div-right absolute -inset-y-1 right-0 w-1 h-full m-auto z-20 bg-gradient-to-b from-pink-500 via-purple-500 to-blue-500"></div>
-                        <div className="div-bottom absolute -inset-x-1 bottom-0 h-1 w-full m-auto z-20 bg-gradient-to-l from-blue-500 via-purple-500 to-pink-500"></div>
+                        <div className="div-left absolute -inset-y-1 left-0 w-1 h-full m-auto z-20 bg-gradient-to-t from-pink-800 via-purple-800 to-blue-800"></div>
+                        <div className="div-top absolute -inset-x-1 top-0 h-1 w-full m-auto z-20 bg-gradient-to-r from-blue-800 via-purple-800 to-pink-800"></div>
+                        <div className="div-right absolute -inset-y-1 right-0 w-1 h-full m-auto z-20 bg-gradient-to-b from-pink-800 via-purple-800 to-blue-800"></div>
+                        <div className="div-bottom absolute -inset-x-1 bottom-0 h-1 w-full m-auto z-20 bg-gradient-to-l from-blue-800 via-purple-800 to-pink-800"></div>
                     </div>
                 </div>
             </div>

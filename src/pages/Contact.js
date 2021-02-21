@@ -5,9 +5,9 @@ import Form from "../components/Form";
 function Contact() {
     const cssClasses = [
         "bg-gradient-to-r",
-        "from-blue-500",
-        "via-purple-500",
-        "to-pink-500",
+        "from-blue-800",
+        "via-purple-800",
+        "to-pink-800",
         "animate-btn-gradient",
         "bg-clip-text",
         "text-transparent",
