@@ -1,6 +1,6 @@
 import { ReactComponent as Hello } from "../images/hello.svg";
 
-const nameForNavbar = ["Projects", "About", "Contact"];
+const nameForNavbar = ["Home", "Projects", "About", "Contact"];
 
 const Navbar = () => {
     return (

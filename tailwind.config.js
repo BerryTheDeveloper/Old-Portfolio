@@ -3,6 +3,11 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
+            colors: {
+                violet: {
+                    800: "#5B21B6",
+                },
+            },
             backgroundImage: (theme) => ({
                 image: "url('./images/bg.jpg')",
             }),
@@ -81,6 +86,7 @@ module.exports = {
         backdropFilter: {
             blur: "blur(40px)",
             "custom-blur": "blur(25px)",
+            "btn-blur": "blur(5px)",
         },
         skew: {
             45: "45deg",
