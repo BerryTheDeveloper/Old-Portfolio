@@ -22,9 +22,6 @@ const About = () => {
         divTop.classList.remove("animate-gradient-top");
         divRight.classList.remove("animate-gradient-right");
         divBottom.classList.remove("animate-gradient-bottom");
-        // e.class.add(
-        //     "bg-gradient-to-r from-blue-500 via-purple-500 to pink-500"
-        // );
     };
 
     return (
@@ -43,7 +40,7 @@ const About = () => {
                                 <Hello className="w-8 h-8" />
                             </span>
                         </p>
-                        <p className="text-gray-300">
+                        <p className="text-gray-300 px-8">
                             Nazywam się{" "}
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
                                 Bartłomiej Popiołek

@@ -15,6 +15,7 @@ module.exports = {
             animation: {
                 hello: "hello 1s ease-in-out infinite",
                 "bg-gradient": "bg-gradient 5s ease infinite",
+                "btn-gradient": "bg-gradient 3s ease infinite",
                 "gradient-left": "gradient-left 2s linear  infinite",
                 "gradient-top": "gradient-top 2s linear infinite",
                 "gradient-right": "gradient-right 2s linear  infinite",
@@ -80,6 +81,9 @@ module.exports = {
         backdropFilter: {
             blur: "blur(40px)",
             "custom-blur": "blur(25px)",
+        },
+        skew: {
+            45: "45deg",
         },
     },
     variants: {
