@@ -8,16 +8,20 @@ function Home() {
             ".neon-bottom"
         );
 
-        // e.target.classList.add("tracking-widest");
         e.target.parentElement.parentElement.classList.add("scale-110");
+
         divGlass.classList.remove("delay-300");
         divGlass.classList.add("translate-x-52");
 
+        divNeonBottom.classList.remove("filter-blur-3");
+        divNeonBottom.classList.add("filter-blur-10");
         divNeonBottom.classList.remove("-bottom-2");
         divNeonBottom.classList.add("-bottom-0");
         divNeonBottom.classList.add("w-full");
         divNeonBottom.classList.add("h-1/2");
 
+        divNeonTop.classList.remove("filter-blur-3");
+        divNeonTop.classList.add("filter-blur-10");
         divNeonTop.classList.remove("-top-2");
         divNeonTop.classList.add("-top-0");
         divNeonTop.classList.add("w-full");
@@ -33,17 +37,20 @@ function Home() {
             ".neon-bottom"
         );
 
-        // e.target.classList.remove("tracking-widest");
         e.target.parentElement.parentElement.classList.remove("scale-110");
         setTimeout(() => {
             divGlass.classList.remove("translate-x-52");
         }, 300);
 
+        divNeonBottom.classList.add("filter-blur-3");
+        divNeonBottom.classList.remove("filter-blur-10");
         divNeonBottom.classList.add("-bottom-2");
         divNeonBottom.classList.remove("-bottom-0");
         divNeonBottom.classList.remove("w-full");
         divNeonBottom.classList.remove("h-1/2");
 
+        divNeonTop.classList.add("filter-blur-3");
+        divNeonTop.classList.remove("filter-blur-10");
         divNeonTop.classList.add("-top-2");
         divNeonTop.classList.remove("-top-0");
         divNeonTop.classList.remove("w-full");
@@ -79,12 +86,8 @@ function Home() {
                         </a>
                         <div className="glass bg-gradient-to-l from-white to-transparent opacity-10 absolute top-0 -left-5 w-8/12 h-full transform skew-x-45 transition duration-500 z-10"></div>
                     </div>
-                    <div
-                        className="neon-top bg-blue-800 absolute -top-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0"
-                        style={{ filter: "blur(3px)" }}></div>
-                    <div
-                        className="neon-bottom bg-blue-800 absolute -bottom-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0"
-                        style={{ filter: "blur(3px)" }}></div>
+                    <div className="neon-top bg-blue-800 absolute -top-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0 filter-blur-3"></div>
+                    <div className="neon-bottom bg-blue-800 absolute -bottom-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0 filter-blur-3"></div>
                 </div>
                 {/*  Second button */}
                 <div className="w-max h-max ml-6 relative transform transition-all duration-500">
@@ -98,12 +101,8 @@ function Home() {
                         </a>
                         <div className="glass bg-gradient-to-l from-white to-transparent opacity-10 absolute top-0 -left-5 w-8/12 h-full transform skew-x-45 transition duration-500 z-10"></div>
                     </div>
-                    <div
-                        className="neon-top bg-violet-800 absolute -top-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0"
-                        style={{ filter: "blur(3px)" }}></div>
-                    <div
-                        className="neon-bottom bg-violet-800 absolute -bottom-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0"
-                        style={{ filter: "blur(3px)" }}></div>
+                    <div className="neon-top bg-violet-800 absolute -top-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0 filter-blur-3 "></div>
+                    <div className="neon-bottom bg-violet-800 absolute -bottom-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0 filter-blur-3 "></div>
                 </div>
                 {/* Third button */}
                 <div className="w-max h-max ml-6 relative transform transition-all duration-500">
@@ -117,12 +116,9 @@ function Home() {
                         </a>
                         <div className="glass bg-gradient-to-l from-white to-transparent opacity-10 absolute top-0 -left-5 w-8/12 h-full transform skew-x-45 transition duration-500 z-10"></div>
                     </div>
-                    <div
-                        className="neon-top bg-pink-800 absolute -top-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0"
-                        style={{ filter: "blur(3px)" }}></div>
-                    <div
-                        className="neon-bottom bg-pink-800 absolute -bottom-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0"
-                        style={{ filter: "blur(3px)" }}></div>
+                    <div className="neon-top bg-pink-800 absolute -top-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0 filter-blur-3 "></div>
+                    <div className="neon-bottom bg-pink-800 absolute -bottom-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0 filter-blur-3 "></div>
+                    {/* ZROBIĆ BLUR PO HOVER NA 10 PX */}
                 </div>
             </div>
             <a href="#" className="self-center mt-auto mb-10 animate-bounce">
