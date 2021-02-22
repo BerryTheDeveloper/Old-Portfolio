@@ -60,22 +60,22 @@ function Home() {
     return (
         <div className="w-full text-white h-screen flex flex-col text-left pt-20 pl-8 z-20">
             <div className="pt-52">
-                <p className="text-5xl font-medium tracking-wider">
+                <p className="md:text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
                     A Frontend Developer Passionate
                 </p>
-                <p className="text-5xl font-medium tracking-wider">
+                <p className="md:text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
                     About Creating User
                 </p>
-                <p className="text-5xl font-medium tracking-wider">
+                <p className="md:text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
                     Friendly Products
                 </p>
-                <p className="tracking-wider text-2xl mt-12 opacity-50">
+                <p className="tracking-wider md:text-xl xl:text-2xl mt-12 opacity-50">
                     Currently frelancing and seraching for new oppurtonites.
                 </p>
             </div>
             <div className="flex mt-24 justify-start">
                 {/* First button */}
-                <div className="w-max h-max ml-6 relative transform transition-all duration-500">
+                <div className="w-max h-max  xl:ml-6 relative transform transition-all duration-500">
                     <div className="w-max h-max relative overflow-hidden z-10">
                         <a
                             href="#"

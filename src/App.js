@@ -1,12 +1,12 @@
 import Navbar from "./components/Navbar";
-import Icons from "./components/Icons";
+import LanguageIcons from "./components/LanguageIcons";
 import Content from "./components/Content";
 
 function App() {
     return (
         <>
             <div className="w-11/12 m-auto z-20 relative">
-                <Icons />
+                <LanguageIcons />
                 <div className="w-full m-auto flex">
                     <Navbar />
                     <Content />

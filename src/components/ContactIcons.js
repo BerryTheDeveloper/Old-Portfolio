@@ -49,7 +49,7 @@ const ContactIcons = () => {
                 className="w-24 h-24 m-8 bg-gray-300 bg-opacity-20 ring-2 ring-gray-300 ring-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6 relative overflow-hidden z-20"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
-                <Facebook className="w-12 h-12 relative z-10" />
+                <Facebook className="w-12 h-12" />
                 <div className="bg-white bg-opacity-30 absolute top-0 left-0 w-6 h-full transform skew-x-45 translate-x-40 transition duration-500"></div>
             </a>
             <a
@@ -61,7 +61,8 @@ const ContactIcons = () => {
                 <div className="bg-white bg-opacity-30 absolute top-0 left-0 w-6 h-full transform skew-x-45 translate-x-40 transition duration-500"></div>
             </a>
             <a
-                href="#"
+                href="https://github.com/Simply-man"
+                target="_blank"
                 className="w-24 h-24 m-8 bg-gray-300 bg-opacity-20 ring-2 ring-gray-300 ring-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
