@@ -58,7 +58,7 @@ function Home() {
     };
 
     return (
-        <div className="w-full text-white h-screen flex flex-col text-left md:pt-20 pl-8 z-20">
+        <div className="w-full text-white sm:h-screen flex flex-col text-left md:pt-20 pl-8 z-20">
             <div className="pt-36 sm:pt-52">
                 <p className="text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
                     A Frontend Developer Passionate
@@ -73,7 +73,7 @@ function Home() {
                     Currently frelancing and seraching for new oppurtonites.
                 </p>
             </div>
-            <div className="flex flex-col flex-wrap sm:flex-row mt-24 justify-start items-center">
+            <div className="h-max flex flex-col flex-wrap sm:flex-row mt-24 justify-start items-center pb-10 sm:pb-0">
                 {/* First button */}
                 <div className="w-max h-max md:ml-6 relative transform transition-all duration-500">
                     <div className="w-max h-max relative overflow-hidden z-10">
@@ -123,7 +123,7 @@ function Home() {
             </div>
             <a
                 href="#"
-                className="self-center mt-auto mb-1 sm:mb-10 animate-bounce">
+                className="self-center mt-auto py-10 sm:py-0 sm:mb-10 animate-bounce">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

@@ -10,7 +10,7 @@ const Card = ({ source, title, git, site }) => {
                 src={source}
                 alt={`${title}`}
             />
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col flex-wrap justify-center items-center">
                 <p className="h-max text-white font-bold text-xl md:text-2xl w-max">
                     {title}
                 </p>
