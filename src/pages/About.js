@@ -1,7 +1,11 @@
 import { ReactComponent as Hello } from "../images/hello.svg";
 import Cv_ENG from "../assets/cv/bartlomiej_popiolek_CV_ENG.pdf";
+import useWindowWidth from "../hooks/useWindowWidth";
 const About = () => {
+    const width = useWindowWidth();
+
     const getSelectors = () => {
+        if (width < 1279) return;
         const divLeft = document.querySelector(".div-left");
         const divTop = document.querySelector(".div-top");
         const divRight = document.querySelector(".div-right");
@@ -10,6 +14,7 @@ const About = () => {
     };
 
     const handleMouseEnter = (e) => {
+        if (width < 1279) return;
         const { divLeft, divTop, divRight, divBottom } = getSelectors();
         divLeft.classList.add("animate-gradient-left");
         divTop.classList.add("animate-gradient-top");
@@ -17,6 +22,7 @@ const About = () => {
         divBottom.classList.add("animate-gradient-bottom");
     };
     const handleMouseLeave = (e) => {
+        if (width < 1279) return;
         const { divLeft, divTop, divRight, divBottom } = getSelectors();
         divLeft.classList.remove("animate-gradient-left");
         divTop.classList.remove("animate-gradient-top");

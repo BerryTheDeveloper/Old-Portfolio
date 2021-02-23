@@ -1,7 +1,11 @@
 import Cv_ENG from "../assets/cv/bartlomiej_popiolek_CV_ENG.pdf";
+import useWindowWidth from "../hooks/useWindowWidth";
 
 function Home() {
+    const width = useWindowWidth();
+
     const handleMouseEnter = (e) => {
+        if (width < 1279) return;
         const divGlass = e.target.parentElement.querySelector(".glass");
         const divNeonTop = e.target.parentElement.parentElement.querySelector(
             ".neon-top"
@@ -31,6 +35,7 @@ function Home() {
     };
 
     const handleMouseLeave = (e) => {
+        if (width < 1279) return;
         const divGlass = e.target.parentElement.querySelector(".glass");
         const divNeonTop = e.target.parentElement.parentElement.querySelector(
             ".neon-top"

@@ -1,8 +1,11 @@
 import React from "react";
 import ContactIcons from "../components/ContactIcons";
 import Form from "../components/Form";
+import useWindowWidth from "../hooks/useWindowWidth";
 
 function Contact() {
+    const width = useWindowWidth();
+
     const cssClasses = [
         "bg-gradient-to-r",
         "from-blue-800",
@@ -16,6 +19,7 @@ function Contact() {
     const getGetInTouchText = () => document.querySelector(".contact-title");
 
     const handleMouseEnter = (e) => {
+        if (width < 1279) return;
         const div = e.target.querySelector("div");
         const getInTouch = getGetInTouchText();
         cssClasses.forEach((item) => {
@@ -29,6 +33,7 @@ function Contact() {
     };
 
     const handleMouseLeave = (e) => {
+        if (width < 1279) return;
         const div = e.target.querySelector("div");
         const getInTouch = getGetInTouchText();
         cssClasses.forEach((item) => {
@@ -62,7 +67,7 @@ function Contact() {
                 </div>
             </div>
             <div className="w-full md:w-1/4 flex justify-center items-end">
-                <ContactIcons />
+                <ContactIcons width={width} />
             </div>
         </div>
     );

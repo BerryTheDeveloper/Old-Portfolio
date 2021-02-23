@@ -1,6 +1,13 @@
 const Form = ({ handleMouseEnter, handleMouseLeave }) => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    };
+
     return (
-        <form action="#" className="w-full flex flex-col pl-2">
+        <form
+            action="#"
+            className="w-full flex flex-col pl-2"
+            onSubmit={handleSubmit}>
             <label
                 htmlFor="name"
                 className="text-sm font-medium pt-7 pb-2 text-gray-300">
@@ -73,7 +80,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave }) => {
                 className="w-full h-36 text-white font-bold px-3 pt-2 bg-gray-300 bg-opacity-20 outline-none resize-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-white focus:ring-opacity-80"></textarea>
 
             <button
-                type="#"
+                type="submit"
                 className="w-max h-12 text-md md:text-xl cursor-pointer mt-16 py-2 px-3 bg-gray-300 bg-opacity-20 backdrop-filter text-white tracking-wider shadow-xl ring-2 ring-white ring-opacity-80 backdrop-filter shadow-2xl transition duration-500 relative overflow-hidden"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>

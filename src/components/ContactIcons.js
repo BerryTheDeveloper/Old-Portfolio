@@ -3,8 +3,9 @@ import { ReactComponent as Twitter } from "../images/twitter.svg";
 import { ReactComponent as Github } from "../images/github.svg";
 import { ReactComponent as Linkedin } from "../images/linkedin.svg";
 
-const ContactIcons = () => {
+const ContactIcons = ({ width }) => {
     const handleMouseEnter = (e) => {
+        if (width < 1279) return;
         const tagName = e.target.tagName;
         if (tagName === "A") {
             const div = e.target.querySelector("div");
@@ -24,6 +25,7 @@ const ContactIcons = () => {
     };
 
     const handleMouseLeave = (e) => {
+        if (width < 1279) return;
         const tagName = e.target.tagName;
         if (tagName === "A") {
             const div = e.target.querySelector("div");
@@ -47,7 +49,7 @@ const ContactIcons = () => {
             <a
                 href="https://www.facebook.com/profile.php?id=100003344122574"
                 target="_blank"
-                className="w-16 h-16 sm:w-24 sm:h-24 m-8 bg-gray-300 bg-opacity-20 ring-2 ring-gray-300 ring-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6 relative overflow-hidden z-20"
+                className="w-16 h-16 sm:w-24 sm:h-24 m-8 bg-gray-300 bg-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6 relative overflow-hidden z-20"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
                 <Facebook className="w-8 h-8 sm:w-12 sm:h-12" />
@@ -56,7 +58,7 @@ const ContactIcons = () => {
             <a
                 href="https://twitter.com/SimplyManDev"
                 target="_blank"
-                className="w-16 h-16 sm:w-24 sm:h-24 m-8 bg-gray-300 bg-opacity-20 ring-2 ring-gray-300 ring-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
+                className="w-16 h-16 sm:w-24 sm:h-24 m-8 bg-gray-300 bg-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
                 <Twitter className="w-8 h-8 sm:w-12 sm:h-12" />
@@ -65,7 +67,7 @@ const ContactIcons = () => {
             <a
                 href="https://github.com/Simply-man"
                 target="_blank"
-                className="w-16 h-16 sm:w-24 sm:h-24 m-8 bg-gray-300 bg-opacity-20 ring-2 ring-gray-300 ring-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
+                className="w-16 h-16 sm:w-24 sm:h-24 m-8 bg-gray-300 bg-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
                 <Github className="w-8 h-8 sm:w-12 sm:h-12" />
@@ -74,7 +76,7 @@ const ContactIcons = () => {
             <a
                 href="https://www.linkedin.com/in/bart%C5%82omiej-popio%C5%82ek-6394981b2/"
                 target="_blank"
-                className="w-16 h-16 sm:w-24 sm:h-24 m-8 bg-gray-300 bg-opacity-20 ring-2 ring-gray-300 ring-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
+                className="w-16 h-16 sm:w-24 sm:h-24 m-8 bg-gray-300 bg-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
                 <Linkedin className="w-8 h-8 sm:w-12 sm:h-12" />
