@@ -4,7 +4,7 @@ const ParticlesComp = () => {
     return (
         <Particles
             id="tsparticles"
-            className="w-full absolute inset-0"
+            className="w-full absolute inset-0 hidden"
             options={{
                 fpsLimit: 60,
                 interactivity: {
