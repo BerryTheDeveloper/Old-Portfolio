@@ -11,7 +11,7 @@ const Card = ({ source, title, git, site }) => {
                 alt={`${title}`}
             />
             <div className="flex flex-col flex-wrap justify-center items-center">
-                <p className="h-max text-white font-bold text-xl md:text-2xl w-max">
+                <p className="h-max text-center text-white font-bold text-xl md:text-2xl">
                     {title}
                 </p>
                 <div className="flex w-max h-max m-6 text-white text-xl font-semibold justify-center items-center">

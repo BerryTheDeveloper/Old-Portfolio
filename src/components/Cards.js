@@ -9,8 +9,8 @@ import RPSGame from "../images/Projects/RPSGame.png";
 
 const Cards = () => {
     return (
-        <div className="w-full flex" id="Projects">
-            <div className="flex flex-col lg:flex-row flex-wrap m-auto">
+        <div className="w-full flex z-10 realtive" id="Projects">
+            <div className="w-full flex flex-col lg:flex-row flex-wrap m-auto">
                 <div className="lg:w-1/2 flex justify-center flex-col">
                     <Card
                         source={landingPage}

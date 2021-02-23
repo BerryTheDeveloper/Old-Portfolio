@@ -4,7 +4,7 @@ const ParticlesComp = () => {
     return (
         <Particles
             id="tsparticles"
-            className="w-full absolute inset-0 hidden"
+            className="w-full absolute inset-0  z-0 "
             options={{
                 fpsLimit: 60,
                 interactivity: {
@@ -45,7 +45,7 @@ const ParticlesComp = () => {
                         value: "#fff",
                         animation: {
                             enable: true,
-                            speed: 4,
+                            speed: 2,
                             sync: false,
                         },
                     },
@@ -111,11 +111,11 @@ const ParticlesComp = () => {
                     number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: 1000,
                             factor: 1000,
                         },
                         limit: 0,
-                        value: 100,
+                        value: 30,
                     },
                     opacity: {
                         random: {
@@ -127,7 +127,7 @@ const ParticlesComp = () => {
                             destroy: "none",
                             enable: true,
                             minimumValue: 0.3,
-                            speed: 0.5,
+                            speed: 0.3,
                             startValue: "random",
                             sync: false,
                         },

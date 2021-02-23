@@ -12,6 +12,7 @@ module.exports = {
                 image: "url('./images/bg.jpg')",
                 "image-2": "url('./images/bg2.jpg')",
                 "image-3": "url('./images/bg3.png')",
+                "image-4": "url('./images/bg4.png')",
             }),
             height: {
                 "85vh": "85vh",
