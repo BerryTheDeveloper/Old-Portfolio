@@ -41,16 +41,18 @@ function Contact() {
     };
 
     return (
-        <div className="w-10/12 m-auto pb-36 flex">
-            <div className="w-3/4">
-                <div className="w-3/4 flex flex-col text-white pt-8">
-                    <h1 className="contact-title text-6xl font-semibold text-gray-300">
+        <div
+            className="w-10/12 m-auto pb-16 flex flex-col md:flex-row"
+            id="Contact">
+            <div className="w-full md:w-3/4">
+                <div className="w-full md:w-3/4 flex flex-col text-white pt-8">
+                    <h1 className="contact-title text-4xl md:text-6xl font-semibold text-gray-300">
                         Get in touch!
                     </h1>
-                    <p className="text-3xl text-gray-600  pl-1 pt-3">
+                    <p className="text-xl md:text-3xl text-gray-600  pl-1 pt-3">
                         How can I help you?
                     </p>
-                    <p className="text-3xl text-gray-300 pl-2 mt-20 tracking-wide">
+                    <p className="text-2xl md:text-3xl text-gray-300 pl-2 mt-20 tracking-wide">
                         Leave a message
                     </p>
                     <Form
@@ -59,7 +61,7 @@ function Contact() {
                     />
                 </div>
             </div>
-            <div className="w-1/4 flex justify-center items-end">
+            <div className="w-full md:w-1/4 flex justify-center items-end">
                 <ContactIcons />
             </div>
         </div>

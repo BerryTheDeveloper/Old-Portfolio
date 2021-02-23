@@ -3,7 +3,7 @@ import { ReactComponent as UKIcon } from "../images/united-kingdom.svg";
 
 const LanguageIcons = () => {
     return (
-        <div className="fixed top-10 right-10 z-20">
+        <div className="fixed top-10 right-10 z-20 hidden">
             <a href="#">
                 <PolandIcon />
             </a>

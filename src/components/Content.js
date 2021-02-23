@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 const Content = () => {
     return (
-        <div className="w-4/5 flex flex-col z-20">
+        <div className="w-full sm:w-4/5 flex flex-col z-20">
             <Home />
             <Projects />
             <About />

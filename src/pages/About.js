@@ -27,20 +27,20 @@ const About = () => {
     return (
         <div className="w-full flex flex-col m-auto">
             <div className="w-full text-center pt-36">
-                <p className="text-7xl uppercase font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-800 via-purple-800 to-pink-800 animate-bg-gradient">
+                <p className="text-4xl xl:text-7xl uppercase font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-800 via-purple-800 to-pink-800 animate-bg-gradient">
                     let me introduce myself
                 </p>
             </div>
             <div className="w-full flex flex-col pb-24 justify-center items-center">
-                <div className="w-10/12 h-full m-auto my-36 text-center font-semibold text-2xl uppercase font-bold text-3xl tracking-wider leading-normal relative  rounded-lg border-1 ">
+                <div className="w-10/12 h-full m-auto my-36 font-semibold uppercase font-bold text-2xl text-center tracking-wider leading-normal relative  rounded-lg border-1 ">
                     <div className="w-full m-auto z-20 relative">
                         <p className="text-gray-300 pt-24 pb-16 flex justify-center items-center m-auto">
                             Cześć!
-                            <span className="animate-hello pl-3 ">
+                            <span className="animate-hello pl-3">
                                 <Hello className="w-8 h-8" />
                             </span>
                         </p>
-                        <p className="text-gray-300 px-8">
+                        <p className="text-gray-300 px-8 pt-8 text-xl">
                             Nazywam się{" "}
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-800 via-purple-800 to-pink-800">
                                 Bartłomiej Popiołek
@@ -48,7 +48,7 @@ const About = () => {
                             . Jestem absolwentem Politechniki Wrocławskiej,
                             kótry specjalizuje się w Elektronice Cyfrowej.
                         </p>
-                        <p className="text-gray-300 py-24 px-8">
+                        <p className="text-gray-300 py-24 px-8 text-xl">
                             Na co dzień zajmuję się tworzeniem stron oraz
                             aplikacji internetowych. Najczęsciej używam
                             techcnologii takich jak{" "}
@@ -56,7 +56,7 @@ const About = () => {
                             oraz <span className="text-blue-500"> React </span>
                             <span className="text-red-500">❤️</span>
                         </p>
-                        <p className="text-gray-300 pb-24 px-8">
+                        <p className="text-gray-300 pb-24 px-8 text-xl">
                             Wolne chwilę pooświęcan na czytaniu książek, graniu
                             w gry oraz koszykówkę.
                         </p>
@@ -72,7 +72,7 @@ const About = () => {
                     <div className="w-max h-max m-auto flex justify-center text-gray-300 relative cursor-pointer z-20 mb-12">
                         <a
                             href="#"
-                            className="text-2xl font-semibold py-3 px-2 tracking-wider uppercase z-20 relative"
+                            className="text-xl md:text-2xl font-semibold py-3 px-2 tracking-wider uppercase z-20 relative"
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}>
                             Resume

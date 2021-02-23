@@ -23,7 +23,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="w-1/5 h-screen sticky top-0 text-white text-2xl font-normal leading-10 fixed z-20 flex flex-col justify-between">
+        <nav className="w-1/5 h-screen sticky top-0 text-white text-xl xl:text-2xl font-normal leading-10 fixed z-20 flex flex-col justify-between hidden sm:flex">
             <div className="flex items-center pt-10">
                 <p className="tracking-wide text-xl text-white font-bold pr-1">
                     Hi!

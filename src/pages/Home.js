@@ -58,28 +58,28 @@ function Home() {
     };
 
     return (
-        <div className="w-full text-white h-screen flex flex-col text-left pt-20 pl-8 z-20">
-            <div className="pt-52">
-                <p className="md:text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
+        <div className="w-full text-white h-screen flex flex-col text-left md:pt-20 pl-8 z-20">
+            <div className="pt-36 sm:pt-52">
+                <p className="text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
                     A Frontend Developer Passionate
                 </p>
-                <p className="md:text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
+                <p className="text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
                     About Creating User
                 </p>
-                <p className="md:text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
+                <p className="text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
                     Friendly Products
                 </p>
-                <p className="tracking-wider md:text-xl xl:text-2xl mt-12 opacity-50">
+                <p className="tracking-wider text-xl xl:text-2xl mt-12 opacity-50">
                     Currently frelancing and seraching for new oppurtonites.
                 </p>
             </div>
-            <div className="flex mt-24 justify-start">
+            <div className="flex flex-col flex-wrap sm:flex-row mt-24 justify-start items-center">
                 {/* First button */}
-                <div className="w-max h-max  xl:ml-6 relative transform transition-all duration-500">
+                <div className="w-max h-max md:ml-6 relative transform transition-all duration-500">
                     <div className="w-max h-max relative overflow-hidden z-10">
                         <a
-                            href="#"
-                            className="block bg-white bg-opacity-10 backdrop-btn-blur text-xl cursor-pointer py-2 px-3 tracking-wider border-2 border-solid border-white border-opacity-90 rounded-sm relative z-20 transition-all duration-300"
+                            href="#Projects"
+                            className="block bg-white bg-opacity-10 backdrop-btn-blur text-md cursor-pointer py-2 px-3 tracking-wider border-2 border-solid border-white border-opacity-90 rounded-sm relative z-20 transition-all duration-300"
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}>
                             View my work
@@ -90,11 +90,11 @@ function Home() {
                     <div className="neon-bottom bg-blue-800 absolute -bottom-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0 filter-blur-3"></div>
                 </div>
                 {/*  Second button */}
-                <div className="w-max h-max ml-6 relative transform transition-all duration-500">
+                <div className="w-max h-max mt-12 md:ml-6 sm:mt-0 sm:ml-8 relative transform transition-all duration-500">
                     <div className="w-max h-max relative overflow-hidden z-10">
                         <a
                             href="#"
-                            className="block bg-white bg-opacity-10 backdrop-btn-blur text-xl cursor-pointer py-2 px-3 tracking-wider border-2 border-solid border-white border-opacity-90 rounded-sm relative z-20 transition-all duration-300"
+                            className="block bg-white bg-opacity-10 backdrop-btn-blur text-md cursor-pointer py-2 px-3 tracking-wider border-2 border-solid border-white border-opacity-90 rounded-sm relative z-20 transition-all duration-300"
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}>
                             Check my CV
@@ -105,11 +105,11 @@ function Home() {
                     <div className="neon-bottom bg-violet-800 absolute -bottom-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0 filter-blur-3 "></div>
                 </div>
                 {/* Third button */}
-                <div className="w-max h-max ml-6 relative transform transition-all duration-500">
+                <div className="w-max h-max mt-12 md:mt-0 sm:ml-20 md:ml-6 relative transform transition-all duration-500">
                     <div className="w-max h-max relative overflow-hidden z-10">
                         <a
-                            href="#"
-                            className="block bg-white bg-opacity-10 backdrop-btn-blur text-xl cursor-pointer py-2 px-3 tracking-wider border-2 border-solid border-white border-opacity-90 rounded-sm relative z-20 transition-all duration-300"
+                            href="#Contact"
+                            className="block bg-white bg-opacity-10 backdrop-btn-blur text-md cursor-pointer py-2 px-3 tracking-wider border-2 border-solid border-white border-opacity-90 rounded-sm relative z-20 transition-all duration-300"
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}>
                             Contact with me
@@ -121,7 +121,9 @@ function Home() {
                     {/* ZROBIĆ BLUR PO HOVER NA 10 PX */}
                 </div>
             </div>
-            <a href="#" className="self-center mt-auto mb-10 animate-bounce">
+            <a
+                href="#"
+                className="self-center mt-auto mb-1 sm:mb-10 animate-bounce">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

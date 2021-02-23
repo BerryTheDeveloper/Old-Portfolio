@@ -43,7 +43,7 @@ const ContactIcons = () => {
     };
 
     return (
-        <div className="w-full pb-8 flex flex-col justify-center items-center">
+        <div className="w-full pt-24 flex flex-row flex-wrap md:flex-col justify-center items-center">
             <a
                 href="https://www.facebook.com/profile.php?id=100003344122574"
                 target="_blank"

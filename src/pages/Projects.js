@@ -3,7 +3,7 @@ import Cards from "../components/Cards";
 
 const Projects = () => {
     return (
-        <div className=" w-full relative">
+        <div className=" w-full relative pt-10">
             <ParticlesComp />
             <Cards />
         </div>

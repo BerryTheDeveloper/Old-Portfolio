@@ -9,9 +9,9 @@ import RPSGame from "../images/Projects/RPSGame.png";
 
 const Cards = () => {
     return (
-        <div className="w-full flex">
-            <div className="flex m-auto">
-                <div className="flex justify-center flex-col">
+        <div className="w-full flex" id="Projects">
+            <div className="flex flex-col lg:flex-row flex-wrap m-auto">
+                <div className="lg:w-1/2 flex justify-center flex-col">
                     <Card
                         source={landingPage}
                         git="https://github.com/Simply-man/DesignPage"
@@ -37,7 +37,7 @@ const Cards = () => {
                         title="Portfolio landing page"
                     />
                 </div>
-                <div className="flex flex-col pt-64">
+                <div className="lg:w-1/2 flex flex-col lg:pt-64">
                     <Card
                         source={FurnitureWebsite}
                         git="https://github.com/Simply-man/website-wojtekmeble.pl"
