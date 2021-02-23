@@ -58,8 +58,8 @@ function Home() {
     };
 
     return (
-        <div className="w-full text-white sm:h-screen flex flex-col text-left md:pt-20 pl-8 z-20">
-            <div className="pt-36 sm:pt-52">
+        <div className="w-full sm:h-screen text-white flex flex-col text-left md:pt-20 pl-8 z-20">
+            <div className="pt-12 sm:pt-36 sm:pt-52">
                 <p className="text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
                     A Frontend Developer Passionate
                 </p>
@@ -118,12 +118,11 @@ function Home() {
                     </div>
                     <div className="neon-top bg-pink-800 absolute -top-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0 filter-blur-3 "></div>
                     <div className="neon-bottom bg-pink-800 absolute -bottom-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0 filter-blur-3 "></div>
-                    {/* ZROBIĆ BLUR PO HOVER NA 10 PX */}
                 </div>
             </div>
             <a
                 href="#"
-                className="self-center mt-auto py-10 sm:py-0 sm:mb-10 animate-bounce">
+                className="self-center mt-auto py-10 sm:py-0 sm:mb-1 animate-bounce hidden sm:flex">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
