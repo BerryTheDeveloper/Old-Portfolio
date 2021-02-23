@@ -1,3 +1,5 @@
+import Cv_ENG from "../assets/cv/bartlomiej_popiolek_CV_ENG.pdf";
+
 function Home() {
     const handleMouseEnter = (e) => {
         const divGlass = e.target.parentElement.querySelector(".glass");
@@ -58,7 +60,9 @@ function Home() {
     };
 
     return (
-        <div className="w-full sm:h-screen text-white flex flex-col text-left md:pt-20 pl-8 z-20">
+        <div
+            className="w-full sm:h-screen text-white flex flex-col text-left md:pt-20 pl-8 z-20"
+            id="Home">
             <div className="pt-12 sm:pt-36 sm:pt-52">
                 <p className="text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
                     A Frontend Developer Passionate
@@ -87,13 +91,14 @@ function Home() {
                         <div className="glass bg-gradient-to-l from-white to-transparent opacity-10 absolute top-0 -left-5 w-8/12 h-full transform skew-x-45 transition duration-500 z-10"></div>
                     </div>
                     <div className="neon-top bg-blue-800 absolute -top-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0 filter-blur-3"></div>
-                    <div className="neon-bottom bg-blue-800 absolute -bottom-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0 filter-blur-3"></div>
+                    <div className="neon-bottom bg-blue-800 absolute -bottom-2 left-1/2 w-12 h-3 rounded-md transform -translate-x-1/2 transition-all delay-100 duration-500 z-0 filter-blur-3 "></div>
                 </div>
                 {/*  Second button */}
                 <div className="w-max h-max mt-12 md:ml-6 sm:mt-0 sm:ml-8 relative transform transition-all duration-500">
                     <div className="w-max h-max relative overflow-hidden z-10">
                         <a
-                            href="#"
+                            href={Cv_ENG}
+                            target="_blank"
                             className="block bg-white bg-opacity-10 backdrop-btn-blur text-md cursor-pointer py-2 px-3 tracking-wider border-2 border-solid border-white border-opacity-90 rounded-sm relative z-20 transition-all duration-300"
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}>
@@ -121,7 +126,7 @@ function Home() {
                 </div>
             </div>
             <a
-                href="#"
+                href="#Projects"
                 className="self-center mt-auto py-10 sm:py-0 sm:mb-1 animate-bounce hidden sm:flex">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

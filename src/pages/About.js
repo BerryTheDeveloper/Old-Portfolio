@@ -1,5 +1,5 @@
 import { ReactComponent as Hello } from "../images/hello.svg";
-
+import Cv_ENG from "../assets/cv/bartlomiej_popiolek_CV_ENG.pdf";
 const About = () => {
     const getSelectors = () => {
         const divLeft = document.querySelector(".div-left");
@@ -75,7 +75,8 @@ const About = () => {
 
                     <div className="w-max h-max m-auto flex justify-center text-gray-300 relative cursor-pointer z-20 mb-12">
                         <a
-                            href="#"
+                            href={Cv_ENG}
+                            target="_blank"
                             className="text-xl md:text-2xl font-semibold py-3 px-2 tracking-wider uppercase z-20 relative"
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}>

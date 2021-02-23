@@ -35,7 +35,7 @@ const Navbar = () => {
             <ul className="flex flex-col text-decoration:none list-none  pb-24">
                 {nameForNavbar.map((item, index) => (
                     <a
-                        href="#"
+                        href={`#${item}`}
                         key={index}
                         className="py-3 w-2/5"
                         onMouseEnter={handleMouseEnter}
