@@ -45,7 +45,8 @@ const ContactIcons = () => {
     return (
         <div className="w-full pb-8 flex flex-col justify-center items-center">
             <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=100003344122574"
+                target="_blank"
                 className="w-24 h-24 m-8 bg-gray-300 bg-opacity-20 ring-2 ring-gray-300 ring-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6 relative overflow-hidden z-20"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
@@ -53,7 +54,8 @@ const ContactIcons = () => {
                 <div className="bg-white bg-opacity-30 absolute top-0 left-0 w-6 h-full transform skew-x-45 translate-x-40 transition duration-500"></div>
             </a>
             <a
-                href="#"
+                href="https://twitter.com/SimplyManDev"
+                target="_blank"
                 className="w-24 h-24 m-8 bg-gray-300 bg-opacity-20 ring-2 ring-gray-300 ring-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
@@ -70,7 +72,8 @@ const ContactIcons = () => {
                 <div className="bg-white bg-opacity-30 absolute top-0 left-0 w-6 h-full transform skew-x-45 translate-x-40 transition duration-500"></div>
             </a>
             <a
-                href="#"
+                href="https://www.linkedin.com/in/bart%C5%82omiej-popio%C5%82ek-6394981b2/"
+                target="_blank"
                 className="w-24 h-24 m-8 bg-gray-300 bg-opacity-20 ring-2 ring-gray-300 ring-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
