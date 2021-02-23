@@ -25,7 +25,7 @@ const About = () => {
     };
 
     return (
-        <div className="w-full flex flex-col m-auto">
+        <div className="w-full flex flex-col m-auto" id="About">
             <div className="w-full text-center pt-36">
                 <p className="text-4xl xl:text-7xl uppercase font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-800 via-purple-800 to-pink-800 animate-bg-gradient">
                     let me introduce myself

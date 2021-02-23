@@ -10,6 +10,7 @@ module.exports = {
             },
             backgroundImage: (theme) => ({
                 image: "url('./images/bg.jpg')",
+                "image-2": "url('./images/bg2.jpg')",
             }),
             height: {
                 "85vh": "85vh",
