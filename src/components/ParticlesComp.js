@@ -1,10 +1,16 @@
 import Particles from "react-tsparticles";
+import useWindowWidth from "../hooks/useWindowWidth";
 
 const ParticlesComp = () => {
+    const width = useWindowWidth();
+    console.log(width);
+
     return (
         <Particles
             id="tsparticles"
-            className="w-full absolute inset-0  z-0 "
+            className={`w-full absolute inset-0 z-0 ${
+                width < 1280 ? "hidden" : ""
+            }`}
             options={{
                 fpsLimit: 60,
                 interactivity: {
