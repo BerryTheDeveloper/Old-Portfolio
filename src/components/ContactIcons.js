@@ -50,7 +50,7 @@ const ContactIcons = () => {
                 className="w-16 h-16 sm:w-24 sm:h-24 m-8 bg-gray-300 bg-opacity-20 ring-2 ring-gray-300 ring-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6 relative overflow-hidden z-20"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
-                <Facebook className="w-8 h-8  sm:w-12 sm:h-12" />
+                <Facebook className="w-8 h-8 sm:w-12 sm:h-12" />
                 <div className="bg-white bg-opacity-30 absolute top-0 left-0 w-6 h-full transform skew-x-45 translate-x-40 transition duration-500"></div>
             </a>
             <a
