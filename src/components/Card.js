@@ -6,7 +6,7 @@ const Card = ({ source, title, git, site }) => {
     return (
         <div className="w-11/12 sm:w-9/12 2xl:w-7/12 p-1 ml-auto mr-auto bg-black bg-opacity-10 backdrop-custom-blur rounded-xl mb-10">
             <img
-                className="rounded-xl w-11/12 sm:w-10/12 h-56 my-6 mx-auto shadow-2xl"
+                className="rounded-xl  w-11/12 sm:object-contain  my-6 mx-auto shadow-2xl"
                 src={source}
                 alt={`${title}`}
             />
