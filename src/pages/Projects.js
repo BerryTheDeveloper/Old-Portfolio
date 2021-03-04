@@ -1,13 +1,14 @@
 import ParticlesComp from "../components/ParticlesComp";
 import Cards from "../components/Cards";
+import { forwardRef } from "react";
 
-const Projects = () => {
+const Projects = (props, ref) => {
     return (
-        <div className=" w-full relative pt-10">
+        <div ref={ref} id="Projects" className="w-full relative pt-10">
             <ParticlesComp />
             <Cards />
         </div>
     );
 };
 
-export default Projects;
+export default forwardRef(Projects);

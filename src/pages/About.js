@@ -1,7 +1,9 @@
 import { ReactComponent as Hello } from "../images/hello.svg";
 import Cv_ENG from "../assets/cv/bartlomiej_popiolek_CV_ENG.pdf";
 import useWindowWidth from "../hooks/useWindowWidth";
-const About = () => {
+import { forwardRef } from "react";
+
+const About = (props, ref) => {
     const width = useWindowWidth();
 
     const getSelectors = () => {
@@ -31,7 +33,7 @@ const About = () => {
     };
 
     return (
-        <div className="w-full flex flex-col m-auto" id="About">
+        <div className="w-full flex flex-col m-auto" id="About" ref={ref}>
             <div className="w-full text-center pt-36">
                 <p className="text-4xl xl:text-7xl uppercase font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-800 via-purple-800 to-pink-800 animate-bg-gradient">
                     let me introduce myself
@@ -99,4 +101,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default forwardRef(About);

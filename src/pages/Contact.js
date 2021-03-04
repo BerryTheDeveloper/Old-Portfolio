@@ -1,9 +1,9 @@
-import React from "react";
+import { forwardRef } from "react";
 import ContactIcons from "../components/ContactIcons";
 import Form from "../components/Form";
 import useWindowWidth from "../hooks/useWindowWidth";
 
-function Contact() {
+function Contact(props, ref) {
     const width = useWindowWidth();
 
     const cssClasses = [
@@ -48,7 +48,8 @@ function Contact() {
     return (
         <div
             className="w-10/12 m-auto pb-16 flex flex-col md:flex-row"
-            id="Contact">
+            id="Contact"
+            ref={ref}>
             <div className="w-full md:w-3/4">
                 <div className="w-full md:w-3/4 flex flex-col text-white pt-8">
                     <h1 className="contact-title text-4xl md:text-6xl font-semibold text-gray-300">
@@ -73,4 +74,4 @@ function Contact() {
     );
 }
 
-export default Contact;
+export default forwardRef(Contact);

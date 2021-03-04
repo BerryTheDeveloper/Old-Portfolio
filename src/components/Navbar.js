@@ -1,6 +1,6 @@
 import { ReactComponent as Hello } from "../images/hello.svg";
 
-const Navbar = () => {
+const Navbar = ({ handleClickRef }) => {
     const nameForNavbar = ["Home", "Projects", "About", "Contact"];
     const backgroundTextClases = [
         "text-blue-800",
@@ -34,14 +34,15 @@ const Navbar = () => {
             </div>
             <ul className="flex flex-col text-decoration:none list-none  pb-24">
                 {nameForNavbar.map((item, index) => (
-                    <a
-                        href={`#${item}`}
+                    <button
+                        onClick={handleClickRef}
                         key={index}
-                        className="py-3 w-2/5"
+                        id={item}
+                        className="py-3 w-2/5 focus:outline-none"
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}>
                         {item}
-                    </a>
+                    </button>
                 ))}
                 {/* <a href="#" className="py-3 hover:text-red-900  w-2/5">Home</a>
                <a href="#" className="py-3 hover:text-red-900  w-2/5">Projects</a>
