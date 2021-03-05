@@ -12,13 +12,15 @@ const Content = ({
     handleClickRef,
 }) => {
     return (
-        <div className="w-full h-max sm:w-4/5 flex flex-col z-20">
-            <Home ref={homePageRef} handleClickRef={handleClickRef} />
-            <Projects ref={projectsPageRef} />
-            <About ref={aboutPageRef} />
-            <Contact ref={contactPageRef} />
-            <Footer />
-        </div>
+        <>
+            <div className="w-full h-max sm:w-4/5 flex flex-col z-20">
+                <Home ref={homePageRef} handleClickRef={handleClickRef} />
+                <Projects ref={projectsPageRef} />
+                <About ref={aboutPageRef} />
+                <Contact ref={contactPageRef} />
+                <Footer />
+            </div>
+        </>
     );
 };
 

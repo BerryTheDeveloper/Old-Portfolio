@@ -1,6 +1,112 @@
-const Form = ({ handleMouseEnter, handleMouseLeave }) => {
+import { useState, useRef, useEffect } from "react";
+
+const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [option, setOption] = useState("Just saying hi");
+    const [message, setMessage] = useState("");
+    const [formIsValid, setFormIsValid] = useState(false);
+    const [error, setError] = useState({});
+    const nameRef = useRef(null);
+    const emailRef = useRef(null);
+
+    useEffect(() => {
+        if (Object.keys(error).length === 0 && name !== "" && email !== "") {
+            setFormIsValid(true);
+        }
+    }, [error, name, email]);
+
+    const noValid = (reference) => {
+        reference.remove("focus:ring-green-500");
+        reference.add("focus:ring-red-500");
+    };
+
+    const Valid = (reference) => {
+        reference.remove("focus:ring-red-500");
+        reference.add("focus:ring-green-500");
+    };
+
+    const handleChangeName = (e) => {
+        let valueName = e.target.id === "name" ? e.target.value : name;
+        setName(valueName);
+
+        let nameRefCureentClassList = nameRef.current.classList;
+
+        let errors = {};
+        let nameIsValid = true;
+
+        //Name
+        if (valueName === "") {
+            setFormIsValid(false);
+            nameIsValid = false;
+            errors["name"] = "Cannot be empty";
+            noValid(nameRefCureentClassList);
+        }
+
+        if (nameIsValid) Valid(nameRefCureentClassList);
+
+        setError(errors);
+    };
+
+    const handleChanegeEmail = (e) => {
+        let valueEmail = e.target.id === "email" ? e.target.value : email;
+        setEmail(valueEmail);
+        let emailRefCureentClassList = emailRef.current.classList;
+        let errors = {};
+        let emailIsValid = true;
+
+        // Email
+        if (valueEmail === "") {
+            setFormIsValid(false);
+            emailIsValid = false;
+            errors["email"] = "Cannot be empty";
+            noValid(emailRefCureentClassList);
+        }
+
+        if (typeof valueEmail !== "undefined") {
+            let lastAtPos = valueEmail.lastIndexOf("@");
+            let lastDotPos = valueEmail.lastIndexOf(".");
+
+            if (
+                !(
+                    lastAtPos < lastDotPos &&
+                    lastAtPos > 0 &&
+                    valueEmail.indexOf("@@") == -1 &&
+                    lastDotPos > 2 &&
+                    valueEmail.length - lastDotPos > 2
+                )
+            ) {
+                setFormIsValid(false);
+                emailIsValid = false;
+                errors["email"] = "Email is not valid";
+                noValid(emailRefCureentClassList);
+            }
+        }
+
+        if (emailIsValid) Valid(emailRefCureentClassList);
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (formIsValid) {
+            setFormIsSuccess(true);
+            setFormIsValid(false);
+            resetForm(e);
+        } else {
+            setFormIsSuccess(false);
+            setFormIsValid(false);
+        }
+    };
+
+    const resetForm = (e) => {
+        e.target.reset();
+        setEmail("");
+        setName("");
+        setMessage("");
+        if (nameRef && emailRef) {
+            nameRef.current.classList.remove("focus:ring-green-500");
+            emailRef.current.classList.remove("focus:ring-green-500");
+        }
     };
 
     return (
@@ -17,6 +123,8 @@ const Form = ({ handleMouseEnter, handleMouseLeave }) => {
                 id="name"
                 name="name"
                 type="text"
+                ref={nameRef}
+                onChange={handleChangeName}
                 placeholder="Please enter your name"
                 className="w-full h-12 text-white font-bold pl-3 bg-white bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-white focus:ring-opacity-80"
             />
@@ -29,6 +137,8 @@ const Form = ({ handleMouseEnter, handleMouseLeave }) => {
                 id="email"
                 name="email"
                 type="email"
+                ref={emailRef}
+                onChange={handleChanegeEmail}
                 placeholder="Please enter your email"
                 className="w-full h-12 text-white font-bold pl-3 bg-gray-300 bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-red-500 focus:ring-opacity-80"
             />
@@ -40,6 +150,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave }) => {
             <select
                 id="subject"
                 name="subject"
+                onChange={(e) => setOption(e.target.value)}
                 className="w-full h-12 text-white text-sm sm:text-md font-bold pl-3 bg-gray-300 bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-green-500 focus:ring-opacity-80">
                 <option
                     value="Just saying hi"
@@ -76,6 +187,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave }) => {
             <textarea
                 name="message"
                 id="message"
+                onChange={(e) => setMessage(e.target.value)}
                 placeholder="Please enter your message"
                 className="w-full h-36 text-white font-bold px-3 pt-2 bg-gray-300 bg-opacity-20 outline-none resize-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-white focus:ring-opacity-80"></textarea>
 

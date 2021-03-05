@@ -1,5 +1,4 @@
 import { forwardRef } from "react";
-import Cv_ENG from "../assets/cv/bartlomiej_popiolek_CV_ENG.pdf";
 import useWindowWidth from "../hooks/useWindowWidth";
 
 const Home = ({ handleClickRef }, ref) => {

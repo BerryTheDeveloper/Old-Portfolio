@@ -1,10 +1,24 @@
-import { forwardRef } from "react";
+import { forwardRef, useState, useEffect } from "react";
 import ContactIcons from "../components/ContactIcons";
 import Form from "../components/Form";
 import useWindowWidth from "../hooks/useWindowWidth";
+import PopUp from "../components/PopUp";
 
 function Contact(props, ref) {
     const width = useWindowWidth();
+    const [openPopUp, setOpenPopUp] = useState();
+    const [formIsSuccess, setFormIsSuccess] = useState(null);
+
+    useEffect(() => {
+        if (formIsSuccess === null) return;
+        if (formIsSuccess || !formIsSuccess) {
+            setOpenPopUp(true);
+            setTimeout(() => {
+                setOpenPopUp(false);
+                setFormIsSuccess(null);
+            }, 2000);
+        }
+    }, [formIsSuccess]);
 
     const cssClasses = [
         "bg-gradient-to-r",
@@ -64,12 +78,14 @@ function Contact(props, ref) {
                     <Form
                         handleMouseEnter={handleMouseEnter}
                         handleMouseLeave={handleMouseLeave}
+                        setFormIsSuccess={setFormIsSuccess}
                     />
                 </div>
             </div>
             <div className="w-full md:w-1/4 flex justify-center items-end">
                 <ContactIcons width={width} />
             </div>
+            {openPopUp && <PopUp formIsSuccess={formIsSuccess} />}
         </div>
     );
 }
