@@ -6,6 +6,7 @@ import FurnitureWebsite from "../images/Projects/FurnitureWebsite.png";
 import PortfolioLandingPage from "../images/Projects/PortfolioLandingPage.png";
 import PortfolioUXUI from "../images/Projects/PortfolioUXUI.png";
 import RPSGame from "../images/Projects/RPSGame.png";
+import Unsplash from "../images/Projects/unsplashGallery.png";
 
 const Cards = () => {
     return (
@@ -55,6 +56,12 @@ const Cards = () => {
                         git="https://github.com/Simply-man/Rock-Paper-Scissors-Game"
                         site="https://simplyrockpapperscissors.netlify.app/"
                         title="Rock, Paper, Scissors game"
+                    />
+                    <Card
+                        source={Unsplash}
+                        git="https://github.com/Simply-man/unsplash-gallery"
+                        site="https://unsplash-gall.netlify.app/"
+                        title="Unsplash gallery clone"
                     />
                 </div>
             </div>
