@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import emailjs from "emailjs-com";
 
 const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
     const [name, setName] = useState("");
@@ -27,8 +28,8 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
     };
 
     const handleChangeName = (e) => {
-        let valueName = e.target.id === "name" ? e.target.value : name;
-        setName(valueName);
+        // let valueName = e.target.id === "name" ? e.target.value : name;
+        setName(e.target.value);
 
         let nameRefCureentClassList = nameRef.current.classList;
 
@@ -36,7 +37,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
         let nameIsValid = true;
 
         //Name
-        if (valueName === "") {
+        if (name === "") {
             setFormIsValid(false);
             nameIsValid = false;
             errors["name"] = "Cannot be empty";
@@ -56,7 +57,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
         let emailIsValid = true;
 
         // Email
-        if (valueEmail === "") {
+        if (valueEmail === "" || email === "") {
             setFormIsValid(false);
             emailIsValid = false;
             errors["email"] = "Cannot be empty";
@@ -89,13 +90,31 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (formIsValid) {
-            setFormIsSuccess(true);
-            setFormIsValid(false);
-            resetForm(e);
+            sendEmail(e);
         } else {
             setFormIsSuccess(false);
             setFormIsValid(false);
         }
+    };
+
+    const sendEmail = (e) => {
+        emailjs
+            .sendForm(
+                `${process.env.REAC_APP_SERVICE_ID}`,
+                `${process.env.REAC_APP_TEMPLATE_I}`,
+                e.target,
+                `${process.env.REAC_APP_USER_ID}`
+            )
+            .then(() => {
+                setFormIsSuccess(true);
+                setFormIsValid(false);
+                resetForm(e);
+            })
+            .catch((err) => {
+                console.error("FAIL!", err);
+                setFormIsSuccess(false);
+                setFormIsValid(false);
+            });
     };
 
     const resetForm = (e) => {
@@ -121,7 +140,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
             </label>
             <input
                 id="name"
-                name="name"
+                name="user_name"
                 type="text"
                 ref={nameRef}
                 onChange={handleChangeName}
@@ -135,7 +154,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
             </label>
             <input
                 id="email"
-                name="email"
+                name="user_email"
                 type="email"
                 ref={emailRef}
                 onChange={handleChanegeEmail}
@@ -149,7 +168,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
             </label>
             <select
                 id="subject"
-                name="subject"
+                name="user_subject"
                 onChange={(e) => setOption(e.target.value)}
                 className="w-full h-12 text-white text-sm sm:text-md font-bold pl-3 bg-gray-300 bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-green-500 focus:ring-opacity-80">
                 <option
