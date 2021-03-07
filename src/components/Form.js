@@ -28,8 +28,8 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
     };
 
     const handleChangeName = (e) => {
-        // let valueName = e.target.id === "name" ? e.target.value : name;
-        setName(e.target.value);
+        let valueName = e.target.id === "name" ? e.target.value : name;
+        setName(valueName);
 
         let nameRefCureentClassList = nameRef.current.classList;
 
@@ -37,7 +37,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
         let nameIsValid = true;
 
         //Name
-        if (name === "") {
+        if (valueName === "") {
             setFormIsValid(false);
             nameIsValid = false;
             errors["name"] = "Cannot be empty";
@@ -100,10 +100,10 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
     const sendEmail = (e) => {
         emailjs
             .sendForm(
-                `${process.env.REAC_APP_SERVICE_ID}`,
-                `${process.env.REAC_APP_TEMPLATE_I}`,
+                `${process.env.REACT_APP_SERVICE_ID}`,
+                `${process.env.REACT_APP_TEMPLATE_ID}`,
                 e.target,
-                `${process.env.REAC_APP_USER_ID}`
+                `${process.env.REACT_APP_USER_ID}`
             )
             .then(() => {
                 setFormIsSuccess(true);
@@ -144,6 +144,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
                 type="text"
                 ref={nameRef}
                 onChange={handleChangeName}
+                autoComplete="off"
                 placeholder="Please enter your name"
                 className="w-full h-12 text-white font-bold pl-3 bg-white bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-white focus:ring-opacity-80"
             />
@@ -158,6 +159,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
                 type="email"
                 ref={emailRef}
                 onChange={handleChanegeEmail}
+                autoComplete="off"
                 placeholder="Please enter your email"
                 className="w-full h-12 text-white font-bold pl-3 bg-gray-300 bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-red-500 focus:ring-opacity-80"
             />
