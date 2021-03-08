@@ -1,0 +1,19 @@
+{
+    "navbar": {
+        "hi": "Hi!",
+        "home": "Home",
+        "projects": "Projects",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "home":{
+        "first-title": "A Frontend Developer Passionate",
+        "second-title": "About Creating User",
+        "third-title": "Friendly Products",
+        "subtitle":
+            "Currently freelancing and searching for new opportunities.",
+        "btn-work": "View my work",
+        "btn-about": "About me",
+        "btn-contact": "Contact with me"
+    }
+}

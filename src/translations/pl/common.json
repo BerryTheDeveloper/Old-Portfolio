@@ -1,0 +1,19 @@
+{
+    "navbar": {
+        "hi": "Cześć!",
+        "home": "Strona główna",
+        "projects": "Projekty",
+        "about": "O mnie",
+        "contact": "Kontakt"
+    },
+    "home":{
+        "first-title": "Frontend Developer, Którego Pasją",
+        "second-title": "Jest Tworzenie Produktów",
+        "third-title": "Przyjaznych Dla Człowieka",
+        "subtitle":
+            "Obecnie freelancer. Poszukuję nowych możliwości.",
+        "btn-work": "Moje projekty",
+        "btn-about": "O mnie",
+        "btn-contact": "Skontaktuj się ze mną"
+    }
+}

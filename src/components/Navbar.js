@@ -1,7 +1,16 @@
+import { useTranslation } from "react-i18next";
 import { ReactComponent as Hello } from "../images/hello.svg";
 
 const Navbar = ({ handleClickRef }) => {
-    const nameForNavbar = ["Home", "Projects", "About", "Contact"];
+    const { t } = useTranslation();
+
+    const namesForNavbar = {
+        Home: t("common:navbar.home"),
+        Projects: t("common:navbar.projects"),
+        About: t("common:navbar.about"),
+        Contact: t("common:navbar.contact"),
+    };
+
     const backgroundTextClases = [
         "text-blue-800",
         "text-purple-800",
@@ -26,29 +35,24 @@ const Navbar = ({ handleClickRef }) => {
         <nav className="w-1/5 h-screen sticky top-0 text-white text-xl xl:text-2xl font-normal leading-10 fixed z-20 flex flex-col justify-between hidden sm:flex">
             <div className="flex items-center pt-10">
                 <p className="tracking-wide text-xl text-white font-bold pr-1">
-                    Hi!
+                    {t("common:navbar.hi")}
                 </p>
                 <div className="animate-hello">
                     <Hello className="w-6" />
                 </div>
             </div>
             <ul className="flex flex-col text-decoration:none list-none  pb-24">
-                {nameForNavbar.map((item, index) => (
+                {Object.keys(namesForNavbar).map((item) => (
                     <button
                         onClick={handleClickRef}
-                        key={index}
+                        key={item}
                         id={item}
                         className="py-3 w-2/5 focus:outline-none"
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}>
-                        {item}
+                        {namesForNavbar[item]}
                     </button>
                 ))}
-                {/* <a href="#" className="py-3 hover:text-red-900  w-2/5">Home</a>
-               <a href="#" className="py-3 hover:text-red-900  w-2/5">Projects</a>
-               <a href="#" className="py-3 hover:text-red-900  w-2/5">Skills</a>
-               <a href="#" className="py-3 hover:text-red-900  w-2/5">About</a>
-               <a href="#" className="py-3 hover:text-red-900  w-2/5">Contact</a> */}
             </ul>
             <div className="h-12  pb-24"></div>
         </nav>
