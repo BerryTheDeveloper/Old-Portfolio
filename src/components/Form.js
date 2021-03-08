@@ -57,7 +57,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
         let emailIsValid = true;
 
         // Email
-        if (valueEmail === "" || email === "") {
+        if (valueEmail === "") {
             setFormIsValid(false);
             emailIsValid = false;
             errors["email"] = "Cannot be empty";
