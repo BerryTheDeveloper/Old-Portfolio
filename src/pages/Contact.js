@@ -3,9 +3,11 @@ import ContactIcons from "../components/ContactIcons";
 import Form from "../components/Form";
 import useWindowWidth from "../hooks/useWindowWidth";
 import PopUp from "../components/PopUp";
+import { useTranslation } from "react-i18next";
 
 function Contact(props, ref) {
     const width = useWindowWidth();
+    const { t } = useTranslation("common");
     const [openPopUp, setOpenPopUp] = useState();
     const [formIsSuccess, setFormIsSuccess] = useState(null);
 
@@ -67,13 +69,13 @@ function Contact(props, ref) {
             <div className="w-full md:w-3/4">
                 <div className="w-full md:w-3/4 flex flex-col text-white pt-8">
                     <h1 className="contact-title text-4xl md:text-6xl font-semibold text-gray-300">
-                        Get in touch!
+                        {t("contact.title")}
                     </h1>
                     <p className="text-xl md:text-3xl text-gray-600  pl-1 pt-3">
-                        How can I help you?
+                        {t("contact.subtitle")}
                     </p>
                     <p className="text-2xl md:text-3xl text-gray-300 pl-2 mt-20 tracking-wide">
-                        Leave a message
+                        {t("contact.form-title")}
                     </p>
                     <Form
                         handleMouseEnter={handleMouseEnter}

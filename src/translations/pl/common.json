@@ -15,5 +15,68 @@
         "btn-work": "Moje projekty",
         "btn-about": "O mnie",
         "btn-contact": "Skontaktuj się ze mną"
+    },
+    "projects":{
+        "mockups": "Mockups landing page",
+        "crawler":"Wyszukiwarka programistów na YT",
+        "weather-app":"Aplikacja pogodowa",
+        "portfolio-landing":"Portfolio landing page",
+        "furniture":"Strona o tematyce meblowej",
+        "portfolio-client":"Portfolio dla klienta",
+        "rps-game":"Gra Kamień, Papier, Nożyce",
+        "unsplash":"Klon Unsplash",
+        "link":{
+            "source":"Źródło",
+            "demo":"Demo"
+        }
+    },
+    "about":{
+        "title": "Pozwól mi się przedstawić",
+        "hi":"Cześć!",
+        "description":{
+            "first": {
+                "Im":"Nazywam się ",
+                "description":". Jestem abswolwentem Politechniki Wrocławskiej, który specjalizuje się w elektronice cyfrowej." 
+            },
+            "second":"Również należę do Stowarzysznia CodersCrew, gdzie pomagam tworzyć realne projekty, dzięki temu uczę się od bardziej doświadczonych osób.",
+            "third":{
+                "description": " Zajmuję się z tworzeniem stron oraz aplikacji internetowych. Moimi najczęściej używanymi technologiami są ",
+                "link":"i"
+            },
+            "fourth":"Wolny czas poświęcam na czytaniu dobrych książek, graniu w gry komputerowe oraz graniu w koszykówkę."
+        },
+        "btn-resume": "CV"
+    },
+    "contact": {
+        "title": "Zostańmy w kontakcie!",
+        "subtitle": "Jak moge Ci pomóc?",
+        "form-title": "Zostaw wiadomość",
+        "form": {
+            "name": {
+                "name-label": "Twoje imię",
+                "placeholder": "Proszę wprowadź imię"
+            },
+            "email": {
+                "name-label": "E-mail",
+                "placeholder": "Proszę wprowadź email"
+            },
+            "subject": {
+                "name-label": "Temat",
+                "options":{
+                    "first": "Chciałbym się tylko przywitać",
+                    "second": "Chciałbym współpracować",
+                    "third": "Mam pomysł na strone/apliakcję",
+                    "fourth": "Wspólna nauka",
+                    "fifth": "Inne (wyjaśnij w wiadomości)"
+                }
+            },
+            "message": {
+                "name-label": "Message",
+                "placeholder": "Proszę zostaw wiadomość"
+            },
+            "btn-submit": {
+                "title": "Współpracujmy!"
+            }
+        }
     }
 }

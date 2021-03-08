@@ -39,7 +39,7 @@ function App() {
                     />
                 </div>
             </div>
-            <div className="bg-image-4 bg-cover bg-center fixed inset-0 bg-no-repeat "></div>
+            <div className="bg-image bg-cover bg-center fixed inset-0 bg-no-repeat "></div>
         </>
     );
 }

@@ -2,13 +2,13 @@ import { useTranslation } from "react-i18next";
 import { ReactComponent as Hello } from "../images/hello.svg";
 
 const Navbar = ({ handleClickRef }) => {
-    const { t } = useTranslation();
+    const { t } = useTranslation("common");
 
     const namesForNavbar = {
-        Home: t("common:navbar.home"),
-        Projects: t("common:navbar.projects"),
-        About: t("common:navbar.about"),
-        Contact: t("common:navbar.contact"),
+        Home: t("navbar.home"),
+        Projects: t("navbar.projects"),
+        About: t("navbar.about"),
+        Contact: t("navbar.contact"),
     };
 
     const backgroundTextClases = [

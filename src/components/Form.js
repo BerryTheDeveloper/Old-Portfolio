@@ -1,7 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import emailjs from "emailjs-com";
+import { useTranslation } from "react-i18next";
 
 const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
+    const { t } = useTranslation("common");
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [option, setOption] = useState("Just saying hi");
@@ -136,7 +138,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
             <label
                 htmlFor="name"
                 className="text-sm font-medium pt-7 pb-2 text-gray-300">
-                Your name
+                {t("contact.form.name.name-label")}
             </label>
             <input
                 id="name"
@@ -145,13 +147,13 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
                 ref={nameRef}
                 onChange={handleChangeName}
                 autoComplete="off"
-                placeholder="Please enter your name"
+                placeholder={t("contact.form.name.placeholder")}
                 className="w-full h-12 text-white font-bold pl-3 bg-white bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-white focus:ring-opacity-80"
             />
             <label
                 htmlFor="email"
                 className="text-sm font-medium pt-10 pb-2 text-gray-300">
-                E-mail
+                {t("contact.form.email.name-label")}
             </label>
             <input
                 id="email"
@@ -160,13 +162,13 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
                 ref={emailRef}
                 onChange={handleChanegeEmail}
                 autoComplete="off"
-                placeholder="Please enter your email"
+                placeholder={t("contact.form.email.placeholder")}
                 className="w-full h-12 text-white font-bold pl-3 bg-gray-300 bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-red-500 focus:ring-opacity-80"
             />
             <label
                 htmlFor="subject"
                 className="text-sm font-medium pt-10 pb-2 text-gray-300">
-                Subject
+                {t("contact.form.subject.name-label")}
             </label>
             <select
                 id="subject"
@@ -174,42 +176,42 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
                 onChange={(e) => setOption(e.target.value)}
                 className="w-full h-12 text-white text-sm sm:text-md font-bold pl-3 bg-gray-300 bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-green-500 focus:ring-opacity-80">
                 <option
-                    value="Just saying hi"
+                    value={t("contact.form.subject.options.first")}
                     className="bg-gray-500 text-white font-bold"
                     defaultValue>
-                    Just saying hi
+                    {t("contact.form.subject.options.first")}
                 </option>
                 <option
-                    value="I would like to cooparate"
+                    value={t("contact.form.subject.options.second")}
                     className="bg-gray-500 text-white font-bold">
-                    I would like to cooparate
+                    {t("contact.form.subject.options.second")}
                 </option>
                 <option
-                    value="I have an idea for website"
+                    value={t("contact.form.subject.options.third")}
                     className="bg-gray-500 text-white font-bold">
-                    I have an idea for website
+                    {t("contact.form.subject.options.third")}
                 </option>
                 <option
-                    value="Let's learn toogether"
+                    value={t("contact.form.subject.options.fourth")}
                     className="bg-gray-500 text-white font-bold">
-                    Let's learn toogether
+                    {t("contact.form.subject.options.fourth")}
                 </option>
                 <option
-                    value="Diffrent (Explain in message)"
+                    value={t("contact.form.subject.options.fifth")}
                     className="bg-gray-500 text-white font-bold">
-                    Diffrent (Explain in message)
+                    {t("contact.form.subject.options.fifth")}
                 </option>
             </select>
             <label
                 htmlFor="message"
                 className="text-sm font-medium pt-10 pb-2 text-gray-300">
-                Message
+                {t("contact.form.message.name-label")}
             </label>
             <textarea
                 name="message"
                 id="message"
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Please enter your message"
+                placeholder={t("contact.form.message.placeholder")}
                 className="w-full h-36 text-white font-bold px-3 pt-2 bg-gray-300 bg-opacity-20 outline-none resize-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-white focus:ring-opacity-80"></textarea>
 
             <button
@@ -218,7 +220,7 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
                 <div className="bg-white bg-opacity-30 absolute top-0 left-0 w-12 h-full transform skew-x-45 translate-x-56 transition duration-500"></div>
-                Let's cooparate!
+                {t("contact.form.btn-submit.title")}
             </button>
         </form>
     );

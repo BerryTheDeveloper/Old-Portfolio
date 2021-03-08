@@ -4,7 +4,7 @@ import useWindowWidth from "../hooks/useWindowWidth";
 
 const Home = ({ handleClickRef }, ref) => {
     const width = useWindowWidth();
-    const { t } = useTranslation();
+    const { t } = useTranslation("common");
 
     const handleMouseEnter = (e) => {
         if (width < 1279) return;
@@ -73,16 +73,16 @@ const Home = ({ handleClickRef }, ref) => {
             ref={ref}>
             <div className="pt-12 sm:pt-36 sm:pt-52">
                 <p className="text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
-                    {t("common:home.first-title")}
+                    {t("home.first-title")}
                 </p>
                 <p className="text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
-                    {t("common:home.second-title")}
+                    {t("home.second-title")}
                 </p>
                 <p className="text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
-                    {t("common:home.third-title")}
+                    {t("home.third-title")}
                 </p>
                 <p className="tracking-wider text-xl xl:text-2xl mt-12 opacity-50">
-                    {t("common:home.subtitle")}
+                    {t("home.subtitle")}
                 </p>
             </div>
             <div className="h-max flex flex-col flex-wrap sm:flex-row mt-24 justify-start items-center pb-10 sm:pb-0">
@@ -95,7 +95,7 @@ const Home = ({ handleClickRef }, ref) => {
                             className="block bg-white bg-opacity-10 backdrop-btn-blur text-md cursor-pointer py-2 px-3 tracking-wider border-2 border-solid border-white border-opacity-90 rounded-sm relative z-20 transition-all duration-300 focus:outline-none"
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}>
-                            {t("common:home.btn-work")}
+                            {t("home.btn-work")}
                         </button>
                         <div className="glass bg-gradient-to-l from-white to-transparent opacity-10 absolute top-0 -left-5 w-8/12 h-full transform skew-x-45 transition duration-500 z-10"></div>
                     </div>
@@ -111,7 +111,7 @@ const Home = ({ handleClickRef }, ref) => {
                             className="block bg-white bg-opacity-10 backdrop-btn-blur text-md cursor-pointer py-2 px-3 tracking-wider border-2 border-solid border-white border-opacity-90 rounded-sm relative z-20 transition-all duration-300 focus:outline-none"
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}>
-                            {t("common:home.btn-about")}
+                            {t("home.btn-about")}
                         </button>
                         <div className="glass bg-gradient-to-l from-white to-transparent opacity-10 absolute top-0 -left-5 w-8/12 h-full transform skew-x-45 transition duration-500 z-10"></div>
                     </div>
@@ -127,7 +127,7 @@ const Home = ({ handleClickRef }, ref) => {
                             className="block bg-white bg-opacity-10 backdrop-btn-blur text-md cursor-pointer py-2 px-3 tracking-wider border-2 border-solid border-white border-opacity-90 rounded-sm relative z-20 transition-all duration-300 focus:outline-none"
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}>
-                            {t("common:home.btn-contact")}
+                            {t("home.btn-contact")}
                         </button>
                         <div className="glass bg-gradient-to-l from-white to-transparent opacity-10 absolute top-0 -left-5 w-8/12 h-full transform skew-x-45 transition duration-500 z-10"></div>
                     </div>

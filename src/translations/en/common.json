@@ -15,5 +15,68 @@
         "btn-work": "View my work",
         "btn-about": "About me",
         "btn-contact": "Contact with me"
+    },
+    "projects":{
+        "mockups": "Mockups landing page",
+        "crawler":"React Crawler developers on YT",
+        "weather-app":"React Wheater App",
+        "portfolio-landing":"Portfolio landing page",
+        "furniture":"Furniture Website",
+        "portfolio-client":"Portfolio for a client",
+        "rps-game":"Rock, Paper, Scissors game",
+        "unsplash":"Unsplash gallery clone",
+        "link":{
+            "source":"Source",
+            "demo":"Demo"
+        }
+    },
+    "about":{
+        "title": "LET ME INTRODUCE MYSELF",
+        "hi":"Hi!",
+        "description":{
+            "first": {
+                "Im":"I'm ",
+                "description":". I'm graduate of Wrocław University of Science and Technology and I specialize in Digital Electronics." 
+            },
+            "second":"Also I belong to non-profit organization CodresCrew where I helping to create a real-life projects and I can learn more from more experienced people.",
+            "third":{
+                "description": " I deal with creation of websites and web apps. My most used technologies are ",
+                "link":"and"
+            },
+            "fourth":"On my free time I love to read good books, playing computer games and playing basketball."
+        },
+        "btn-resume": "resume"
+    },
+    "contact": {
+        "title": "Get in touch!",
+        "subtitle": "How can I help you?",
+        "form-title": "Leave a message",
+        "form": {
+            "name": {
+                "name-label": "Your name",
+                "placeholder": "Please enter your name"
+            },
+            "email": {
+                "name-label": "E-mail",
+                "placeholder": "Please enter your email"
+            },
+            "subject": {
+                "name-label": "Subject",
+                "options":{
+                    "first": "Just saying hi",
+                    "second": "I would like to cooparate",
+                    "third": "I have an idea for website",
+                    "fourth": "Let's learn toogether",
+                    "fifth": "Diffrent (Explain in message)"
+                }
+            },
+            "message": {
+                "name-label": "Message",
+                "placeholder": "Please enter your message"
+            },
+            "btn-submit": {
+                "title": "Let's cooparate!"
+            }
+        }
     }
 }

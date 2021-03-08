@@ -4,7 +4,7 @@ import { ReactComponent as PolandIcon } from "../images/poland.svg";
 import { ReactComponent as UKIcon } from "../images/united-kingdom.svg";
 
 const LanguageIcons = () => {
-    const { t, i18n } = useTranslation("common");
+    const { i18n } = useTranslation("common");
     const [lang, setlang] = useState(i18n.language);
 
     const handleClick = () => {

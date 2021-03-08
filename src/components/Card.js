@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { ReactComponent as GithubIcon } from "../images/github.svg";
 import { ReactComponent as NetlfiyIcon } from "../images/netlify.svg";
 import { ReactComponent as WebsiteIcon } from "../images/Website.svg";
 
 const Card = ({ source, title, git, site }) => {
+    const { t } = useTranslation("common");
     return (
         <div className="w-11/12 sm:w-9/12 2xl:w-7/12 p-1 ml-auto mr-auto bg-black bg-opacity-10 backdrop-custom-blur rounded-xl mb-10">
             <img
@@ -17,11 +19,15 @@ const Card = ({ source, title, git, site }) => {
                 <div className="flex w-max h-max m-6 text-white text-xl font-semibold justify-center items-center">
                     <a href={git} className="flex items-end" target="=_blank">
                         <GithubIcon className="w-6 h-6 md:w-10 md:h-10" />
-                        <p className="px-4 hover:text-blue-800">Source</p>
+                        <p className="px-4 hover:text-blue-800">
+                            {t("projects.link.source")}
+                        </p>
                     </a>
                     <a href={site} className="flex items-end" target="=_blank">
                         <WebsiteIcon className="w-6 h-6 md:w-10 md:h-10" />
-                        <p className="px-4 hover:text-blue-800">Demo</p>
+                        <p className="px-4 hover:text-blue-800">
+                            {t("projects.link.demo")}
+                        </p>
                     </a>
                 </div>
             </div>
