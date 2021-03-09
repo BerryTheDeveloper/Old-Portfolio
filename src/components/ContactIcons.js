@@ -51,7 +51,7 @@ const ContactIcons = ({ width }) => {
                 target="_blank"
                 className="w-16 h-16 sm:w-24 sm:h-24 m-8 bg-gray-300 bg-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6 relative overflow-hidden z-20"
                 data-aos="fade-left"
-                data-aos-duration="1350"
+                data-aos-duration="1100"
                 data-offset="200"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
@@ -63,7 +63,7 @@ const ContactIcons = ({ width }) => {
                 target="_blank"
                 className="w-16 h-16 sm:w-24 sm:h-24 m-8 bg-gray-300 bg-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
                 data-aos="fade-left"
-                data-aos-duration="1350"
+                data-aos-duration="1100"
                 data-offset="200"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
@@ -75,7 +75,7 @@ const ContactIcons = ({ width }) => {
                 target="_blank"
                 className="w-16 h-16 sm:w-24 sm:h-24 m-8 bg-gray-300 bg-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
                 data-aos="fade-left"
-                data-aos-duration="1350"
+                data-aos-duration="1100"
                 data-offset="200"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
@@ -87,7 +87,7 @@ const ContactIcons = ({ width }) => {
                 target="_blank"
                 className="w-16 h-16 sm:w-24 sm:h-24 m-8 bg-gray-300 bg-opacity-20 rounded-md backdrop-filter shadow-2xl flex items-center justify-center transition duration-500 transform hover:-translate-y-6  relative overflow-hidden"
                 data-aos="fade-left"
-                data-aos-duration="1350"
+                data-aos-duration="1100"
                 data-offset="200"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>

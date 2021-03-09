@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { ReactComponent as GithubIcon } from "../images/github.svg";
-import { ReactComponent as NetlfiyIcon } from "../images/netlify.svg";
 import { ReactComponent as WebsiteIcon } from "../images/Website.svg";
 
 const Card = ({ source, title, git, site }) => {

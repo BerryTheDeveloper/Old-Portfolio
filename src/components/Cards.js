@@ -18,7 +18,7 @@ const Cards = () => {
                 <div className="lg:w-1/2 flex justify-center flex-col">
                     <div
                         data-aos="fade-right"
-                        data-aos-duration="1500"
+                        data-aos-duration="1000"
                         data-aos-offset="100">
                         <Card
                             source={landingPage}
@@ -29,7 +29,7 @@ const Cards = () => {
                     </div>
                     <div
                         data-aos="fade-right"
-                        data-aos-duration="1500"
+                        data-aos-duration="1000"
                         data-aos-offset="100">
                         <Card
                             source={DevsOnYT}
@@ -40,7 +40,7 @@ const Cards = () => {
                     </div>
                     <div
                         data-aos="fade-right"
-                        data-aos-duration="1500"
+                        data-aos-duration="1000"
                         data-aos-offset="100">
                         <Card
                             source={ReactWeatherApp}
@@ -51,7 +51,7 @@ const Cards = () => {
                     </div>
                     <div
                         data-aos="fade-right"
-                        data-aos-duration="1500"
+                        data-aos-duration="1000"
                         data-aos-offset="100">
                         <Card
                             source={PortfolioLandingPage}
@@ -64,7 +64,7 @@ const Cards = () => {
                 <div className="lg:w-1/2 flex flex-col lg:pt-64">
                     <div
                         data-aos="fade-left"
-                        data-aos-duration="1500"
+                        data-aos-duration="1000"
                         data-aos-offset="100">
                         <Card
                             source={FurnitureWebsite}
@@ -75,7 +75,7 @@ const Cards = () => {
                     </div>
                     <div
                         data-aos="fade-left"
-                        data-aos-duration="1500"
+                        data-aos-duration="1000"
                         data-aos-offset="100">
                         <Card
                             source={PortfolioUXUI}
@@ -86,7 +86,7 @@ const Cards = () => {
                     </div>
                     <div
                         data-aos="fade-left"
-                        data-aos-duration="1500"
+                        data-aos-duration="1000"
                         data-aos-offset="100">
                         <Card
                             source={RPSGame}
@@ -97,7 +97,7 @@ const Cards = () => {
                     </div>
                     <div
                         data-aos="fade-left"
-                        data-aos-duration="1500"
+                        data-aos-duration="1000"
                         data-aos-offset="100">
                         <Card
                             source={Unsplash}

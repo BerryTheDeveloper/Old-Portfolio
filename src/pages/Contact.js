@@ -78,14 +78,14 @@ function Contact(props, ref) {
                     <p
                         className="text-xl md:text-3xl text-gray-600  pl-1 pt-3"
                         data-aos="fade-right"
-                        data-aos-duration="1250"
+                        data-aos-duration="1150"
                         data-offset="200">
                         {t("contact.subtitle")}
                     </p>
                     <p
                         className="text-2xl md:text-3xl text-gray-300 pl-2 mt-20 tracking-wide"
                         data-aos="fade-right"
-                        data-aos-duration="1300"
+                        data-aos-duration="1200"
                         data-offset="200">
                         {t("contact.form-title")}
                     </p>
