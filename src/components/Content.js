@@ -13,7 +13,7 @@ const Content = ({
 }) => {
     return (
         <>
-            <div className="w-full h-max sm:w-4/5 flex flex-col z-20">
+            <div className="w-full h-max sm:w-4/5 flex flex-col z-20 overflow-x-hidden">
                 <Home ref={homePageRef} handleClickRef={handleClickRef} />
                 <Projects ref={projectsPageRef} />
                 <About ref={aboutPageRef} />

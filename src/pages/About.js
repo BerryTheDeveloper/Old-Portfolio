@@ -37,31 +37,53 @@ const About = (props, ref) => {
 
     return (
         <div className="w-full flex flex-col m-auto" id="About" ref={ref}>
-            <div className="w-full text-center pt-36">
+            <div
+                className="w-full text-center pt-36"
+                data-aos="fade-down"
+                data-aos-duration="1500">
                 <p className="text-4xl xl:text-7xl uppercase font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-800 via-purple-800 to-pink-800 animate-bg-gradient">
                     {t("about.title")}
                 </p>
             </div>
-            <div className="w-full flex flex-col pb-24 justify-center items-center">
+            <div
+                className="w-full flex flex-col pb-24 justify-center items-center"
+                data-aos="fade-down"
+                data-aos-duration="2000">
                 <div className="w-10/12 h-full m-auto my-36 font-semibold uppercase font-bold text-2xl text-center tracking-wider leading-normal relative  rounded-lg border-1 ">
                     <div className="w-full m-auto z-20 relative">
-                        <p className="text-gray-300 pt-24 pb-16 flex justify-center items-center m-auto">
+                        <p
+                            className="text-gray-300 pt-24 pb-16 flex justify-center items-center m-auto"
+                            data-aos="fade-down"
+                            data-aos-duration="2500"
+                            data-offset="200">
                             {t("about.hi")}
                             <span className="animate-hello pl-3">
                                 <Hello className="w-8 h-8" />
                             </span>
                         </p>
-                        <p className="text-gray-300 px-8 pt-8 text-xl">
+                        <p
+                            className="text-gray-300 px-8 pt-8 text-xl"
+                            data-aos="fade-down"
+                            data-aos-duration="2500"
+                            data-offset="200">
                             {t("about.description.first.Im")}
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-800 via-purple-800 to-pink-800">
                                 Bartłomiej Popiołek
                             </span>
                             {t("about.description.first.description")}
                         </p>
-                        <p className="text-gray-300 pt-24 px-8 text-xl">
+                        <p
+                            className="text-gray-300 pt-24 px-8 text-xl"
+                            data-aos="fade-down"
+                            data-aos-duration="2500"
+                            data-offset="200">
                             {t("about.description.second")}
                         </p>
-                        <p className="text-gray-300 py-24 px-8 text-xl">
+                        <p
+                            className="text-gray-300 py-24 px-8 text-xl"
+                            data-aos="fade-down"
+                            data-aos-duration="2500"
+                            data-offset="200">
                             {t("about.description.third.description")}
                             <span className="text-yellow-300">
                                 JavaScript
@@ -70,7 +92,11 @@ const About = (props, ref) => {
                             <span className="text-blue-500"> React </span>
                             <span className="text-red-500">❤️</span>
                         </p>
-                        <p className="text-gray-300 pb-24 px-8 text-xl">
+                        <p
+                            className="text-gray-300 pb-24 px-8 text-xl"
+                            data-aos="fade-down"
+                            data-aos-duration="2500"
+                            data-offset="200">
                             {t("about.description.fourth")}
                         </p>
                     </div>
@@ -82,7 +108,11 @@ const About = (props, ref) => {
                         className="absolute -top-8 -right-8 w-3/4 h-3/4 rounded-lg bg-pink-800 opacity-40"
                         style={{ filter: "blur(40px)" }}></div>
 
-                    <div className="w-max h-max m-auto flex justify-center text-gray-300 relative cursor-pointer z-20 mb-12">
+                    <div
+                        className="w-max h-max m-auto flex justify-center text-gray-300 relative cursor-pointer z-20 mb-12"
+                        data-aos="fade-down"
+                        data-aos-duration="2500"
+                        data-offset="200">
                         <a
                             href={i18n.language === "en" ? Cv_ENG : Cv_PL}
                             target="_blank"

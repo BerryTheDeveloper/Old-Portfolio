@@ -137,7 +137,10 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
             onSubmit={handleSubmit}>
             <label
                 htmlFor="name"
-                className="text-sm font-medium pt-7 pb-2 text-gray-300">
+                className="text-sm font-medium pt-7 pb-2 text-gray-300"
+                data-aos="fade-right"
+                data-aos-duration="1350"
+                data-offset="200">
                 {t("contact.form.name.name-label")}
             </label>
             <input
@@ -149,10 +152,16 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
                 autoComplete="off"
                 placeholder={t("contact.form.name.placeholder")}
                 className="w-full h-12 text-white font-bold pl-3 bg-white bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-white focus:ring-opacity-80"
+                data-aos="fade-right"
+                data-aos-duration="1350"
+                data-offset="200"
             />
             <label
                 htmlFor="email"
-                className="text-sm font-medium pt-10 pb-2 text-gray-300">
+                className="text-sm font-medium pt-10 pb-2 text-gray-300"
+                data-aos="fade-right"
+                data-aos-duration="1350"
+                data-offset="200">
                 {t("contact.form.email.name-label")}
             </label>
             <input
@@ -164,17 +173,26 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
                 autoComplete="off"
                 placeholder={t("contact.form.email.placeholder")}
                 className="w-full h-12 text-white font-bold pl-3 bg-gray-300 bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-red-500 focus:ring-opacity-80"
+                data-aos="fade-right"
+                data-aos-duration="1350"
+                data-offset="200"
             />
             <label
                 htmlFor="subject"
-                className="text-sm font-medium pt-10 pb-2 text-gray-300">
+                className="text-sm font-medium pt-10 pb-2 text-gray-300"
+                data-aos="fade-right"
+                data-aos-duration="1350"
+                data-offset="200">
                 {t("contact.form.subject.name-label")}
             </label>
             <select
                 id="subject"
                 name="user_subject"
                 onChange={(e) => setOption(e.target.value)}
-                className="w-full h-12 text-white text-sm sm:text-md font-bold pl-3 bg-gray-300 bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-green-500 focus:ring-opacity-80">
+                className="w-full h-12 text-white text-sm sm:text-md font-bold pl-3 bg-gray-300 bg-opacity-20 outline-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-green-500 focus:ring-opacity-80"
+                data-aos="fade-right"
+                data-aos-duration="1350"
+                data-offset="200">
                 <option
                     value={t("contact.form.subject.options.first")}
                     className="bg-gray-500 text-white font-bold"
@@ -204,7 +222,10 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
             </select>
             <label
                 htmlFor="message"
-                className="text-sm font-medium pt-10 pb-2 text-gray-300">
+                className="text-sm font-medium pt-10 pb-2 text-gray-300"
+                data-aos="fade-right"
+                data-aos-duration="1350"
+                data-offset="200">
                 {t("contact.form.message.name-label")}
             </label>
             <textarea
@@ -212,11 +233,17 @@ const Form = ({ handleMouseEnter, handleMouseLeave, setFormIsSuccess }) => {
                 id="message"
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder={t("contact.form.message.placeholder")}
-                className="w-full h-36 text-white font-bold px-3 pt-2 bg-gray-300 bg-opacity-20 outline-none resize-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-white focus:ring-opacity-80"></textarea>
+                className="w-full h-36 text-white font-bold px-3 pt-2 bg-gray-300 bg-opacity-20 outline-none resize-none shadow-md ring-2 ring-gray-300 ring-opacity-30 focus:ring-white focus:ring-opacity-80"
+                data-aos="fade-right"
+                data-aos-duration="1350"
+                data-offset="200"></textarea>
 
             <button
                 type="submit"
                 className="w-max h-12 text-md md:text-xl cursor-pointer mt-16 py-2 px-3 bg-gray-300 bg-opacity-20 backdrop-filter text-white tracking-wider shadow-xl ring-2 ring-white ring-opacity-80 backdrop-filter shadow-2xl transition duration-500 relative overflow-hidden"
+                data-aos="fade-right"
+                data-aos-duration="1350"
+                data-offset="200"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
                 <div className="bg-white bg-opacity-30 absolute top-0 left-0 w-12 h-full transform skew-x-45 translate-x-56 transition duration-500"></div>

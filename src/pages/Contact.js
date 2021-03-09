@@ -68,13 +68,25 @@ function Contact(props, ref) {
             ref={ref}>
             <div className="w-full md:w-3/4">
                 <div className="w-full md:w-3/4 flex flex-col text-white pt-8">
-                    <h1 className="contact-title text-4xl md:text-6xl font-semibold text-gray-300">
+                    <h1
+                        className="contact-title text-4xl md:text-6xl font-semibold text-gray-300"
+                        data-aos="fade-right"
+                        data-aos-duration="1000"
+                        data-offset="200">
                         {t("contact.title")}
                     </h1>
-                    <p className="text-xl md:text-3xl text-gray-600  pl-1 pt-3">
+                    <p
+                        className="text-xl md:text-3xl text-gray-600  pl-1 pt-3"
+                        data-aos="fade-right"
+                        data-aos-duration="1250"
+                        data-offset="200">
                         {t("contact.subtitle")}
                     </p>
-                    <p className="text-2xl md:text-3xl text-gray-300 pl-2 mt-20 tracking-wide">
+                    <p
+                        className="text-2xl md:text-3xl text-gray-300 pl-2 mt-20 tracking-wide"
+                        data-aos="fade-right"
+                        data-aos-duration="1300"
+                        data-offset="200">
                         {t("contact.form-title")}
                     </p>
                     <Form
