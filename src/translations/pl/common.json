@@ -71,7 +71,7 @@
                 }
             },
             "message": {
-                "name-label": "Message",
+                "name-label": "Wiadomość",
                 "placeholder": "Proszę zostaw wiadomość"
             },
             "btn-submit": {

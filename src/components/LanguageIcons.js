@@ -17,7 +17,7 @@ const LanguageIcons = () => {
     };
 
     return (
-        <div className="fixed top-10 right-10 w-max h-max z-30">
+        <div className="fixed top-3 right-2 sm:top-10 sm:right-10 w-max h-max z-30">
             <button
                 onClick={handleClick}
                 className="w-max h-max relative z-30 cursor-pointer focus:outline-none">
