@@ -1,12 +1,12 @@
 import Card from "../components/Card";
-import landingPage from "../images/Projects/landingPage.png";
-import DevsOnYT from "../images/Projects/DevsOnYT.png";
-import ReactWeatherApp from "../images/Projects/ReactWeatherApp.png";
-import FurnitureWebsite from "../images/Projects/FurnitureWebsite.png";
-import PortfolioLandingPage from "../images/Projects/PortfolioLandingPage.png";
-import PortfolioUXUI from "../images/Projects/PortfolioUXUI.png";
-import RPSGame from "../images/Projects/RPSGame.png";
-import Unsplash from "../images/Projects/unsplashGallery.png";
+import landingPage from "../images/Projects/landingPage.webp";
+import DevsOnYT from "../images/Projects/DevsOnYT.webp";
+import ReactWeatherApp from "../images/Projects/ReactWeatherApp.webp";
+import FurnitureWebsite from "../images/Projects/FurnitureWebsite.webp";
+import PortfolioLandingPage from "../images/Projects/PortfolioLandingPage.webp";
+import PortfolioUXUI from "../images/Projects/PortfolioUXUI.webp";
+import RPSGame from "../images/Projects/RPSGame.webp";
+import Unsplash from "../images/Projects/unsplashGallery.webp";
 import { useTranslation } from "react-i18next";
 
 const Cards = () => {
