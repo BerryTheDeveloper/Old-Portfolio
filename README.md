@@ -45,6 +45,7 @@ Application was built with:
 -   [TailwindCSS](https://tailwindcss.com/)
 -   [EmailJS](https://www.emailjs.com/)
 -   [react-i18next]("https://react.i18next.com/")
+-   [AOS]("https://michalsnik.github.io/aos/")
 
 <!-- GETTING STARTED -->
 
