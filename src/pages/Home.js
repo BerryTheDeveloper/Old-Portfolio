@@ -70,12 +70,11 @@ const Home = ({ handleClickRef }, ref) => {
         <div
             className="w-full sm:h-screen text-white flex flex-col text-left md:pt-20 pl-8 z-20"
             id="Home"
-            ref={ref}>
-            <div
-                className="pt-12 sm:pt-36 sm:pt-52"
-                data-aos="fade-left"
-                data-aos-duration="1500"
-                data-aos-offset="300">
+            ref={ref}
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-offset="300">
+            <div className="pt-12 sm:pt-36 sm:pt-52">
                 <p className="text-3xl lg:text-4xl xl:text-5xl font-medium tracking-wider">
                     {t("home.first-title")}
                 </p>
@@ -89,11 +88,7 @@ const Home = ({ handleClickRef }, ref) => {
                     {t("home.subtitle")}
                 </p>
             </div>
-            <div
-                className="h-max flex flex-col flex-wrap sm:flex-row mt-24 justify-start items-center pb-10 sm:pb-0"
-                data-aos="fade-left"
-                data-aos-duration="2000"
-                data-aos-offset="500">
+            <div className="h-max flex flex-col flex-wrap sm:flex-row mt-24 justify-start items-center pb-10 sm:pb-0">
                 {/* First button */}
                 <div className="w-max h-max md:ml-6 relative transform transition-all duration-500">
                     <div className="w-max h-max relative overflow-hidden z-10">
