@@ -38,7 +38,7 @@ const Cards = () => {
                             title={t("projects.crawler")}
                         />
                     </div>
-                    <div
+                    {/* <div
                         data-aos="fade-right"
                         data-aos-duration="1000"
                         data-aos-offset="100">
@@ -48,7 +48,7 @@ const Cards = () => {
                             site="https://myweatheter.netlify.app/"
                             title={t("projects.weather-app")}
                         />
-                    </div>
+                    </div> */}
                     <div
                         data-aos="fade-right"
                         data-aos-duration="1000"
