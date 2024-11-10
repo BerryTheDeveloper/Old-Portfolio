@@ -74,12 +74,6 @@ Follow the instructions bellow to start the project on your own machine.
     const REACT_APP_USER_ID = 'ENTER YOUR USER KEY FROM EMAILJS';
     ```
 
-<!-- USAGE EXAMPLES -->
-
-## Demo
-
-_Check the application in the real world [Demo](https://portfoliobp.netlify.com)_
-
 <!-- CONTACT -->
 
 ## Contact
