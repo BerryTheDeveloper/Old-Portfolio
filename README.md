@@ -1,7 +1,4 @@
 # Portfolio made with React and TailwindCSS
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f76e5a48-bbb7-40ef-97cc-a6c417371c68/deploy-status)](https://app.netlify.com/sites/portfoliobp/deploys) [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://portfoliobp.netlify.app/)
-
 <br/>
 <!-- TABLE OF CONTENTS -->
 <details open="open">
